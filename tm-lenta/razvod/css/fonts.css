@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansBookC.eot");
+  src: url("../fonts/OfficinaSansBookC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansBookC.woff2") format("woff2"), url("../fonts/OfficinaSansBookC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansBookC-Italic.eot");
+  src: url("../fonts/OfficinaSansBookC-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansBookC-Italic.woff2") format("woff2"), url("../fonts/OfficinaSansBookC-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OfficinaSans SCC';
+  src: url("../fonts/OfficinaSansBookSCC.eot");
+  src: url("../fonts/OfficinaSansBookSCC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansBookSCC.woff2") format("woff2"), url("../fonts/OfficinaSansBookSCC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansMediumC.eot");
+  src: url("../fonts/OfficinaSansMediumC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansMediumC.woff2") format("woff2"), url("../fonts/OfficinaSansMediumC.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansMediumC-Italic.eot");
+  src: url("../fonts/OfficinaSansMediumC-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansMediumC-Italic.woff2") format("woff2"), url("../fonts/OfficinaSansMediumC-Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OfficinaSans SCC';
+  src: url("../fonts/OfficinaSansMediumSCC.eot");
+  src: url("../fonts/OfficinaSansMediumSCC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansMediumSCC.woff2") format("woff2"), url("../fonts/OfficinaSansMediumSCC.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansBoldC.eot");
+  src: url("../fonts/OfficinaSansBoldC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansBoldC.woff2") format("woff2"), url("../fonts/OfficinaSansBoldC.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansBoldC-Italic.eot");
+  src: url("../fonts/OfficinaSansBoldC-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansBoldC-Italic.woff2") format("woff2"), url("../fonts/OfficinaSansBoldC-Italic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OfficinaSans SCC';
+  src: url("../fonts/OfficinaSansBoldSCC.eot");
+  src: url("../fonts/OfficinaSansBoldSCC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansBoldSCC.woff2") format("woff2"), url("../fonts/OfficinaSansBoldSCC.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansExtraBoldC.eot");
+  src: url("../fonts/OfficinaSansExtraBoldC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansExtraBoldC.woff2") format("woff2"), url("../fonts/OfficinaSansExtraBoldC.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansExtraBoldC-Italic.eot");
+  src: url("../fonts/OfficinaSansExtraBoldC-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansExtraBoldC-Italic.woff2") format("woff2"), url("../fonts/OfficinaSansExtraBoldC-Italic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OfficinaSans SCC';
+  src: url("../fonts/OfficinaSansExtraBoldSCC.eot");
+  src: url("../fonts/OfficinaSansExtraBoldSCC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansExtraBoldSCC.woff2") format("woff2"), url("../fonts/OfficinaSansExtraBoldSCC.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OfficinaSans SCC';
+  src: url("../fonts/OfficinaSansBlackSCC.eot");
+  src: url("../fonts/OfficinaSansBlackSCC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansBlackSCC.woff2") format("woff2"), url("../fonts/OfficinaSansBlackSCC.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansBlackC-Italic.eot");
+  src: url("../fonts/OfficinaSansBlackC-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansBlackC-Italic.woff2") format("woff2"), url("../fonts/OfficinaSansBlackC-Italic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OfficinaSans';
+  src: url("../fonts/OfficinaSansBlackC.eot");
+  src: url("../fonts/OfficinaSansBlackC.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficinaSansBlackC.woff2") format("woff2"), url("../fonts/OfficinaSansBlackC.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
