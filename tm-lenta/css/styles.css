@@ -2166,7 +2166,7 @@ table td {
 	right: -260px;
 	width: 255px;
 	height: 37px;
-	padding: 2px 12px 2px 15px;
+	padding: 2px 2px 2px 15px;
 	background: url(../img/tooltip-bg.png) center no-repeat;
 	background-size: contain;
 	font-size: 14px;
@@ -3245,10 +3245,16 @@ table td {
 		right: 0;
 		width: 196px;
     	height: 59px;
-		padding: 8px 12px 2px 15px;
+		padding: 8px 2px 2px 15px;
 		background: url(../img/tooltip-bg-mob.png) center no-repeat;
 		background-size: contain;
 	}
+
+    .tooltip1 {
+        top: -10px;
+        background: url(../img/tooltip-bg-mob1.png) center no-repeat;
+        background-size: contain;
+    }
 
 	.lk-items {
 		height: 490px;
@@ -3314,6 +3320,10 @@ table td {
     	font-size: 16px;
 		line-height: 18px;
     }
+
+    .need-reg {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -3336,6 +3346,13 @@ table td {
 	.tooltip {
 		top: 45px;
 	}
+
+    .tooltip1 {
+        top: 0;
+        width: 145px;
+        height: auto;
+        background-size: 100% 100%;
+    }
 
 	.tab {
 		font-size: 18px;

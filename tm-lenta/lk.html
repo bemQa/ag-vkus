@@ -87,7 +87,11 @@
 							</div>
 							<div class="profile-col contacts-col">
 								<div class="profile-contact profile-mail">konstantinmymail@mail.com</div>
-								<div class="profile-contact profile-phone">+7 (999) 999-99-99</div>
+								<div class="profile-contact profile-phone need-reg">
+									<!-- +7 (999) 999-99-99 -->
+									<a href="#!" class="data-link link pop-op" data-popup="reg-phone">Укажите телефон</a>
+									<div class="tooltip tooltip1">На данный номер будет отправлен приз "Деньги на телефон" в случае выигрыша</div>
+								</div>
 							</div>
 							<div class="profile-col coins-col">
 								<div class="coins-wrapper">
@@ -564,7 +568,28 @@
                 	<div class="popup__title">Добавление карты</div>
                     <form class="popup-form">
                     	<div class="input-field mb30">
-                    		<input type="text" name="card" placeholder="Карта Лента" required>
+                    		<input type="text" name="card" class="card-mask" placeholder="Карта Лента" required>
+                    	</div>
+                    	<div class="btn-wrapper">
+							<button class="btn"><span>Отправить</span></button>
+						</div>
+                    </form>
+                </div>
+            </div>
+		</div>
+		<div id="reg-phone" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 2L2 18" stroke="#85312C" stroke-width="4" stroke-linejoin="round"/>
+						<path d="M2 2L18 18" stroke="#85312C" stroke-width="4" stroke-linejoin="round"/>
+					</svg>
+				</a>
+                <div class="popup__inner">
+                	<div class="popup__title">Добавление телефона</div>
+                    <form class="popup-form">
+                    	<div class="input-field mb30">
+                    		<input type="text" name="phone" class="phone-mask" placeholder="Номер телефона" required>
                     	</div>
                     	<div class="btn-wrapper">
 							<button class="btn"><span>Отправить</span></button>
