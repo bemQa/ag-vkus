@@ -1,6 +1,11 @@
 @media (max-width: 1366px) {
   .info-left__img {
     max-width: 420px; }
+  .info-left:hover {
+    width: 100%; }
+    .info-left:hover .info-left__img {
+      -webkit-transform: translate(30%, 20px) scale(1.1);
+              transform: translate(30%, 20px) scale(1.1); }
   .info-left__title img {
     max-width: 430px; } }
 
@@ -9,7 +14,12 @@
     font-size: 38px;
     line-height: 40px; }
   .info-left__logo img {
-    max-width: 120px; } }
+    max-width: 120px; }
+  .info-left:hover {
+    width: 100%; }
+    .info-left:hover .info-left__img {
+      -webkit-transform: translate(10%, 20px) scale(1.1);
+              transform: translate(10%, 20px) scale(1.1); } }
 
 @media (max-width: 1000px) {
   .footer {
@@ -70,6 +80,9 @@
     width: 100%;
     max-width: 375px;
     margin: auto; }
+    .info-left:hover .info-left__img {
+      -webkit-transform: translateX(-25%);
+              transform: translateX(-25%); }
   .info-left::after {
     left: 50%;
     width: 1000px;

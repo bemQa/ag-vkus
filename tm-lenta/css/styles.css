@@ -912,7 +912,7 @@ footer a {
 
 .main-block {
 	position: relative;
-    padding: 105px 0 60px;
+    padding: 64px 0 60px;
 }
 
 .main-block::before {
@@ -932,12 +932,15 @@ footer a {
 
 .main-choc {
 	position: absolute;
-	top: 155px;
+	top: 165px;
 	max-width: 650px;
 	width: 100%;
 }
 
 .slogan-wrapper {
+    max-width: 1030px;
+    width: 100%;
+    margin: auto;
 	position: relative;
 	display: flex;
     flex-direction: column;
@@ -945,13 +948,13 @@ footer a {
 }
 
 .slogan {
-	max-width: 779px;
+	max-width: 565px;
 	width: 100%;
-	margin-bottom: 25px;
+	/*margin-bottom: 25px;*/
 }
 
 .main-block .btn-wrapper {
-	max-width: 780px;
+	max-width: 565px;
 	width: 100%;
 }
 
@@ -964,7 +967,7 @@ footer a {
 }
 
 .steps {
-	max-width: 1100px;
+	max-width: 980px;
 	width: 100%;
 	margin: auto;
 	display: flex;
@@ -973,7 +976,9 @@ footer a {
 
 .step {
 	position: relative;
-	max-width: 430px;
+	max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .step-img {
@@ -1085,7 +1090,9 @@ footer a {
 
 .prize {
 	position: relative;
-	max-width: 225px;
+	max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .prize-img {
@@ -1496,7 +1503,7 @@ span.error {
 }
 
 .winners-block {
-	padding: 50px 0 150px;
+	padding: 50px 0 100px;
 }
 
 .page-title {
@@ -1608,6 +1615,7 @@ span.error {
 
 .date-filter .select2-results__option {
     height: 30px;
+    font-size: 18px;
     padding: 8px 20px;
 }
 
@@ -1655,7 +1663,7 @@ span.error {
     max-width: 900px;
     width: 100%;
     height: 310px;
-    margin: auto;
+    margin: 0 auto 50px;
 }
 
 table {
@@ -1673,8 +1681,9 @@ table th {
 }
 
 table td {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1;
+    text-align: left;
     color: #1D3A8E;
     padding: 15px 0;
 }
@@ -2024,6 +2033,7 @@ table td {
 
 .profile-name {
 	max-width: 400px;
+    min-height: 54px;
 	font-weight: 800;
 	font-size: 20px;
 	line-height: 27px;
@@ -2677,6 +2687,20 @@ table td {
 	text-transform: uppercase;
 }
 
+.winners-popup .popup__title {
+    font-size: 28px;
+    line-height: 34px;
+    color: #1D3A8E;
+}
+
+.winners-popup .filters {
+    margin-bottom: 40px;
+}
+
+.winners-popup table td b {
+    font-weight: 900;
+}
+
 @media (max-width: 1280px) {
     .container {
     	max-width: 1000px;
@@ -2691,7 +2715,7 @@ table td {
     }
 
     .main-choc {
-	    top: 255px;
+	    top: 265px;
     	max-width: 500px;
     }
 
@@ -2930,27 +2954,36 @@ table td {
     }
 
     .main-choc {
-    	top: 280px;
+    	top: 300px;
     	left: 0;
     	right: 0;
     	max-width: 320px;
     	margin: auto;
     }
 
-    .btn {
+    .slogan-wrapper {
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .slogan {
+        max-width: 277px;
+    }
+
+    .btn:not(.winners-btn) {
 		width: 200px;
 	    height: 60px;
 	    padding: 20px 0;
 	}
 
-	.btn::before {
+	.btn:not(.winners-btn)::before {
 		top: 10px;
 	    left: 5px;
 	    width: 200px;
 	    height: 60px;
 	}
 
-	.btn::after {
+	.btn:not(.winners-btn)::after {
 	    width: 200px;
 	    height: 60px;
 	}
@@ -3176,7 +3209,7 @@ table td {
 
     .profile-name {
     	max-width: 200px;
-        max-height: 66px;
+        height: 66px;
     	font-size: 18px;
     	line-height: 22px;
         overflow: hidden;
