@@ -309,8 +309,8 @@ ul {
   position: absolute;
   max-width: 520px;
   bottom: 0;
-  -webkit-transform: translate(-1%, 20px);
-          transform: translate(-1%, 20px);
+  -webkit-transform: translate(30%, 20px);
+          transform: translate(30%, 20px);
   -webkit-transition: all .3s ease;
   transition: all .3s ease; }
   .info-left__img img {
@@ -449,7 +449,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 600px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
   margin-bottom: 18px;
