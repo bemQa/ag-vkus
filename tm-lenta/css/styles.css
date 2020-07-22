@@ -1651,7 +1651,7 @@ span.error {
     height: 17px;
     margin: auto;
     background: url(../img/search.svg) center no-repeat;
-    background-size: cover;
+    background-size: contain;
     transition: all .2s linear;
 }
 
