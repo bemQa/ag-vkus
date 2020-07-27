@@ -607,7 +607,7 @@ header {
     height: 44px;
     margin: auto;
     background: #fff;
-    z-index: 2;
+    z-index: 3;
 }
 
 .inner-header {
