@@ -70,6 +70,7 @@ $(document).ready(function () {
     if(window.innerWidth < 1000) {
         $('.products-list').scrollbar();
     }
+    $('.choc-history').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({
