@@ -3234,7 +3234,8 @@ table td {
 }
 
 .cookies-block {
-	padding: 50px 0 100px;
+	padding: 110px 0 100px;
+    color: #85312C;
 }
 
 .main-cookie-h1 {
@@ -3684,12 +3685,37 @@ input.error + .vote-checkmark {
 }
 
 .ch {
+    position: relative;
     width: 20%;
-    height: 33%;
+    height: 32%;
 }
 
 .ch.active {
-    background: red;
+    animation: 2s ch infinite linear;
+}
+
+.ch.active::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    background: url(../img/lightning.png) center no-repeat;
+    background-size: contain;
+    opacity: 1;
+}
+
+@keyframes ch {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .vote-popup .popup__inner-prize {
@@ -4117,6 +4143,33 @@ input.error + .vote-checkmark {
     margin: auto;
 }
 
+.people3 .choc-front {
+    right: -40px;
+    max-width: 68px;
+}
+
+.people4 .choc-front {
+    right: -150px;
+    max-width: 230px;
+}
+
+.people7 .choc-front {
+    right: -65px;
+    max-width: 85px;
+}
+
+.people8 .choc-front {
+    top: 50px;
+    right: -50px;
+    max-width: 76px;
+}
+
+.people9 .choc-front {
+    top: -150px;
+    right: -60px;
+    max-width: 100px;
+}
+
 .people-big .people-choc-wrapper,
 .people-big .people-choc {
     width: 260px;
@@ -4159,10 +4212,12 @@ input.error + .vote-checkmark {
     position: relative;
     max-width: 370px;
     width: 100%;
-    height: 181px;
+    height: 162px;
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
+    color: #85312C;
+    margin-bottom: 15px;
 }
 
 .choc-history.scroll-content {
@@ -4185,12 +4240,14 @@ input.error + .vote-checkmark {
     right: 65px;
     height: 112px;
     margin: auto;
+    width: 110px;
+    white-space: nowrap;
 }
 
 .dark-vote {
     position: absolute;
     top: 90px;
-    right: 55px;
+    right: 45px;
     bottom: 0;
     margin: auto;
 }
@@ -4243,6 +4300,7 @@ input.error + .vote-checkmark {
     font-style: italic;
     font-size: 14px;
     line-height: 16px;
+    color: #85312C;
 }
 
 .dark .choc-history-remark {
@@ -5414,6 +5472,11 @@ input.error + .vote-checkmark {
         height: 146px;
     }
 
+    .ch.active::before {
+        width: 70px;
+        height: 70px;
+    }
+
     .my-prize-wrapper {
         flex-direction: column;
     }
@@ -5595,7 +5658,7 @@ input.error + .vote-checkmark {
     }
 
     .choc-history {
-        height: 150px;
+        height: 145px;
         text-align: left;
         font-size: 14px;
         line-height: 16px;
@@ -5607,6 +5670,7 @@ input.error + .vote-checkmark {
         display: flex;
         top: 60px;
         left: 135px;
+        width: auto;
     }
 
     .dark-vote {
@@ -5616,13 +5680,57 @@ input.error + .vote-checkmark {
         right: auto;
         bottom: auto;
         margin: auto;
-        width: 99px;
+        width: 95px;
     }
 
     .choc-front {
         right: 0;
         bottom: auto;
         max-width: 110px;
+    }
+
+    .people2 .choc-front {
+        max-width: 100px;
+    }
+
+    .people3 .choc-front {
+        top: 70px;
+        right: 0;
+        max-width: 70px;
+    }
+
+    .people4 .choc-front {
+        top: -100px;
+        right: 0;
+        max-width: 180px;
+    }
+
+    .people6 .choc-front {
+        top: 50px;
+        max-width: 80px;
+    }
+
+    .people7 .choc-front {
+        top: 50px;
+        right: 0;
+        max-width: 75px;
+    }
+
+    .people8 .choc-front {
+        top: 50px;
+        right: 0;
+        max-width: 76px;
+    }
+
+    .people9 .choc-front {
+        top: 50px;
+        right: 0;
+        max-width: 60px;
+    }
+
+    .people10 .choc-front {
+        top: 50px;
+        max-width: 80px;
     }
 
     .choc-bottom {
@@ -5636,7 +5744,7 @@ input.error + .vote-checkmark {
 
     .choc-history-remark {
         bottom: auto;
-        top: 370px;
+        top: 380px;
     }
 
     .people-big .vote-btn {
@@ -5798,7 +5906,7 @@ input.error + .vote-checkmark {
     }
 
     .people-big .choc-name {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .people-big .ingredients,
