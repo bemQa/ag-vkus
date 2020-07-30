@@ -3629,14 +3629,90 @@ line-height: 32px;
     width: 60px;
 }
 
+.choose-lk-block {
+    position: relative;
+    z-index: 1;
+    padding-top: 15px;
+}
+
+.choose-lk-block::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    top: 0;
+    left: 0;
+    transform: translateY(-2%) skew(0,-3deg);
+    background: radial-gradient(71.45% 44.06% at 50% 55.94%, #FFF9BD 0%, #F7D431 100%);
+    z-index: -1;
+}
+
+.container {
+}
+.choose-lk {
+    max-width: 730px;
+    width: 100%;
+    margin-left: auto;
+    position: relative;
+}
+.choose-lk-title {
+    font-size: 42px;
+line-height: 50px;
+color: #E52229;
+font-style: italic;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.choose-lk-desc {
+    font-size: 21px;
+line-height: 24px;
+margin-bottom: 10px;
+}
+.choose-lk-img {
+    transform: translate(-73px, -28px);
+}
+
+.choose-lk-dec{
+    user-select: none;
+    position: absolute;
+    bottom: -100px;
+    left: -956px;
+}
+
 
 
 
 @media (max-width: 1280px){
 	.main-choc {
 		top: 279px;
-	}
+    }
 
+    .choose-lk-title{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .choose-lk-desc {
+        font-size: 19px;
+        line-height: 24px;
+    }
+    
+    .choose-lk{
+        transform: translateX(15%);
+    }
+
+    .choose-lk-img {
+        transform: translate(-57px, -28px);
+        max-width: 79%;
+    }
+}
+
+@media (max-width: 1120px){
+    
+    .choose-lk{
+        transform: translateX(15%);
+    }
 }
 
 @media(max-width: 1000px){
@@ -3708,6 +3784,36 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
     .choose-block--sl2{
         padding-top: 148px;
+    }
+
+    .choose-lk {
+        text-align: center;
+        transform: none;
+    }
+    .choose-lk-title {
+        max-width: 320px;
+        font-size: 30px;
+line-height: 36px;
+margin: auto;
+margin-bottom: 10px;
+    }
+    .choose-lk-desc {
+        max-width: 250px;
+        font-size: 18px;
+line-height: 20px;
+margin: auto;
+margin-bottom: 30px;
+    }
+    .choose-lk-img {
+        max-width: 100%;
+        transform: translate(0, -28px);
+    }
+    .choose-lk-dec {
+        display: none;
+    }
+
+    .choose-lk-block::before{
+        transform: translateY(-9%) skew(0,-3deg);
     }
     
 }
