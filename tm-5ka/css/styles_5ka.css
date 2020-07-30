@@ -3477,11 +3477,11 @@ body{
 }
 
 body .scroll-element .scroll-bar{
-	background: #118938;
+	background: #85312C;
 }
 
 body .scroll-element .scroll-element_track{
-	background: #118938;
+	background: #85312C;
 }
 
 .get-coin{
@@ -3496,7 +3496,7 @@ body .scroll-element .scroll-element_track{
 }
 
 .date-filter::before{
-	color: #14582A;
+	color: #85312C;
 }
 
 
@@ -3513,7 +3513,7 @@ body .scroll-element .scroll-element_track{
 .select2-container .select2-selection--single,
 .select2-container--default .select2-selection--single .select2-selection__rendered,
 .select2-container--default .select2-results__option[aria-selected=true], .select2-container--default .select2-results__option--highlighted[aria-selected]{
-	color: #14582A;
+	color: #119B4A;
 }
 
 .date-filter .select2-container--default .select2-selection--single .select2-selection__arrow b{
@@ -3527,8 +3527,12 @@ body .scroll-element .scroll-element_track{
 }
 
 .filters .phone-filter input:not([type="checkbox"]){
-	border: 2px solid #14582A;
-    color: #14582A;
+	border: 2px solid #119B4A;
+    color: #119B4A;
+}
+
+.select2-container .select2-selection--single{
+    border: 1px solid #119B4A;
 }
 
 .search{
@@ -3539,11 +3543,11 @@ body .scroll-element .scroll-element_track{
 }
 
 table td{
-	color: #14582A;
+	color: #85312C;
 }
 
 .winners-popup .popup__title{
-	color: #14582A;
+	color: #85312C;
 }
 
 .faq-item-title::before{
@@ -3555,8 +3559,8 @@ table td{
 }
 
 .feedback-form .input-field input:not([type="checkbox"]), .feedback-form .input-field textarea{
-	color: #005A28;
-    border: 1px solid #005A28;
+	color: #119B4A;
+    border: 1px solid #119B4A;
 }
 
 .products-title{
