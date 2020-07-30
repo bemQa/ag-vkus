@@ -1,0 +1,198 @@
+body{
+	color: #14582A;
+}
+
+.slogan-logo{
+	max-width: 565px;
+	width: 100%;
+	
+	height: 59px;
+	z-index: 1;
+	position: relative;
+}
+
+.slogan-logo img{
+	position: absolute;
+	left: 50%;
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-choc{
+	top: 172px;
+}
+
+.step-num{
+	background: #118938;
+}
+
+.step-title{
+	color: #118938;
+}
+
+.page-title{
+	color: #14582A;
+}
+
+.prizes-block::before{
+	background: url(../img/perek/bg3.png) center no-repeat;    
+	background-size: 100% 100%;
+}
+
+.tooltip{
+	color:rgb(17 137 56 / .5);
+}
+
+body .scroll-element .scroll-bar{
+	background: #118938;
+}
+
+body .scroll-element .scroll-element_track{
+	background: #118938;
+}
+
+.get-coin{
+	color: #14582A;
+}
+
+.date-filter::before{
+	color: #14582A;
+}
+
+
+
+.select2-container--open .select2-dropdown--below{
+	border: 1px solid #E5E5E5;
+}
+
+.date-filter .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered,
+.date-filter .select2-container--default .select2-selection--single .select2-selection__placeholder,
+.date-filter .select2-container--default .select2-results__option--highlighted[aria-selected], .date-filter .select2-container--default .select2-results__option[aria-selected=true],
+.date-filter .select2-results__options,
+.date-filter .select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-results__option[aria-selected=true], .select2-container--default .select2-results__option--highlighted[aria-selected]{
+	color: #14582A;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__arrow b{
+	background: url(../img/perek/arrow-date.svg) center no-repeat;
+    background-size: contain;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+	background: url(../img/perek/ar-faq.svg) center no-repeat;
+    background-size: contain;
+}
+
+.filters .phone-filter input:not([type="checkbox"]){
+	border: 2px solid #14582A;
+    color: #14582A;
+}
+
+.search{
+	
+    background: url(../img/perek/search.svg) center no-repeat;
+    background-size: contain;
+
+}
+
+table td{
+	color: #14582A;
+}
+
+.winners-popup .popup__title{
+	color: #14582A;
+}
+
+.faq-item-title::before{
+	background: #5FAF2D;
+}
+
+.faq-item-title.active::before{
+	background: #005A28;
+}
+
+.feedback-form .input-field input:not([type="checkbox"]), .feedback-form .input-field textarea{
+	color: #005A28;
+    border: 1px solid #005A28;
+}
+
+.products-title{
+	background: radial-gradient(48% 50% at 50% 50%, #118938 0%, #005A28 100%);
+}
+
+.products-title.active{
+	color: #14582A;
+}
+
+.prizes{
+	max-width: 1200px;
+}
+
+.prize1 .prize-img{
+	width: 180px;
+	
+}
+
+.prize2 .prize-img{
+	width: 180px;
+
+}
+
+.prize3 .prize-img{
+	width: 180px;
+
+}
+
+.prize4 .prize-img{
+	width: 180px;
+
+}
+
+.prize5 .prize-img{
+	width: 180px;
+
+}
+
+.ss.slick-slide{
+	width: 100%;
+	max-width: 100%;
+}
+
+
+@media (max-width: 1280px){
+	.main-choc {
+		top: 279px;
+	}
+
+}
+
+@media(max-width: 1000px){
+	.menu-links{
+		background: url(../img/perek/menu-bg-green.png) center no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.slogan-logo{
+		height: 33px;
+	}
+
+	.slogan-logo img{
+		height: 400%;
+	}
+
+	.main-choc{
+		top: 335px;
+	}
+
+	.prizes{
+		
+		flex-direction: row;
+		width: 100%;
+	
+	}
+}
