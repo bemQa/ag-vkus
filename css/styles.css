@@ -1158,6 +1158,7 @@ footer a {
 .prizes-block {
 	position: relative;
 	min-height: 450px;
+    padding-bottom: 90px;
 }
 
 .prizes-block::before {
@@ -1290,6 +1291,10 @@ footer a {
 	line-height: 21px;
 	text-align: center;
 	color: #F7D431;
+}
+
+.prizes-block .btn-wrapper {
+    margin-top: 50px;
 }
 
 .main-vote {
@@ -3827,7 +3832,7 @@ input.error + .vote-checkmark {
 }
 
 .prizes-prize-img.prize3 img {
-    max-width: 286px;
+    max-width: 270px;
 }
 
 .prizes-prize-info {
@@ -4665,11 +4670,12 @@ input.error + .vote-checkmark {
     }
 
     .main-choc {
-    	top: 365px;
-    	left: 0;
-    	right: 0;
-    	max-width: 320px;
-    	margin: auto;
+    	top: auto;
+        left: 0;
+        right: 0;
+        bottom: -55px;
+        max-width: 320px;
+        margin: auto;
     }
 
     .slogan-wrapper {
@@ -4677,9 +4683,9 @@ input.error + .vote-checkmark {
         align-items: center;
     }
 
-    .slogan {
+    /*.slogan {
         max-width: 277px;
-    }
+    }*/
 
     .btn:not(.winners-btn) {
 		width: 200px;
@@ -5120,6 +5126,10 @@ input.error + .vote-checkmark {
 		justify-content: flex-start;
 		height: 610px;
 	}
+
+    .products-list.no-scroll {
+        height: auto;
+    }
 
 	.products-item {
 		max-width: 200px;

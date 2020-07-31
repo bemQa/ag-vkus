@@ -324,12 +324,14 @@ $(document).ready(function () {
         $('.tm-slider-block').slick({
             dots: false,
             arrows: true,
-            infinite: false,
+            infinite: true,
             speed: 300,
             fade: true,
             cssEase: 'linear',
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 10000
         });
     }
 
