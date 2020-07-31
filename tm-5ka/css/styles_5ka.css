@@ -3297,9 +3297,9 @@ table td {
 		margin: 5px auto;
 	}
 
-	.lk-btn,
-	.lk-btn::before,
-	.lk-btn::after {
+	.lk-btn:not(.winners-btn),
+	.lk-btn:not(.winners-btn)::before,
+	.lk-btn:not(.winners-btn)::after {
 		width: 260px;
 	}
 
@@ -3774,6 +3774,8 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 
     .f-img{
+    	max-width: 375px;
+    	width: 100%;
         height: 120px;
     }
 
