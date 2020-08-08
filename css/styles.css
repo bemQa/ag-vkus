@@ -1218,7 +1218,7 @@ footer a {
 
 .prize {
 	position: relative;
-	max-width: 265px;
+	/*max-width: 265px;*/
     width: 100%;
     margin: 0 auto;
     outline: none;
@@ -4137,9 +4137,57 @@ input.error + .vote-checkmark {
 
 .choc-right {
     position: absolute;
-    top: 50px;
+    top: 0;
     right: -150px;
+    bottom: 0;
     max-width: 315px;
+    margin: auto;
+}
+
+.people2 .choc-right {
+    max-width: 440px;
+    right: -240px;
+    top: 10px;
+}
+
+.people3 .choc-right {
+    top: -100px;
+    max-width: 300px;
+    right: -140px;
+}
+
+.people4 .choc-right {
+    top: -50px;
+    right: -190px;
+    max-width: 350px;
+}
+
+.people5 .choc-right {
+    top: 45px;
+    right: -190px;
+    max-width: 440px;
+}
+
+.people6 .choc-right {
+    top: -50px;
+    right: -180px;
+    max-width: 380px;
+}
+
+.people7 .choc-right {
+    top: -20px;
+}
+
+.people8 .choc-right {
+    max-width: 335px;
+    top: 100px;
+    right: -170px;
+}
+
+.people10 .choc-right {
+    max-width: 350px;
+    top: -35px;
+    right: -180px;
 }
 
 .choc-front {
@@ -4151,17 +4199,34 @@ input.error + .vote-checkmark {
     margin: auto;
 }
 
+.people1 .choc-front {
+    max-width: 150px;
+}
+
+.people2 .choc-front {
+    top: -200px;
+    right: -40px;
+    max-width: 80px;
+}
+
 .people3 .choc-front {
     right: -40px;
     max-width: 68px;
 }
 
 .people4 .choc-front {
-    right: -150px;
-    max-width: 230px;
+    top: -150px;
+    right: -220px;
+    max-width: 320px;
+}
+
+.people6 .choc-front {
+    right: -75px;
+    max-width: 140px;
 }
 
 .people7 .choc-front {
+    top: -100px;
     right: -65px;
     max-width: 85px;
 }
@@ -4176,6 +4241,11 @@ input.error + .vote-checkmark {
     top: -150px;
     right: -60px;
     max-width: 100px;
+}
+
+.people10 .choc-front {
+    top: -50px;
+    max-width: 150px;
 }
 
 .people-big .people-choc-wrapper,
@@ -5704,6 +5774,8 @@ input.error + .vote-checkmark {
     }
 
     .people2 .choc-front {
+        top: 0;
+        right: 0;
         max-width: 100px;
     }
 
@@ -5721,6 +5793,7 @@ input.error + .vote-checkmark {
 
     .people6 .choc-front {
         top: 50px;
+        right: 0;
         max-width: 80px;
     }
 

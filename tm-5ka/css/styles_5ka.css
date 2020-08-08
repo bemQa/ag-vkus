@@ -799,16 +799,15 @@ footer a {
 }
 
 .footer-links a {
-	font-weight: bold;
     font-size: 14px;
     line-height: 15px;
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 .copyright {
-	max-width: 340px;
-	width: 100%;
-	font-weight: bold;
+    max-width: 340px;
+    width: 100%;
+    font-weight: bold;
     font-size: 11px;
     line-height: 13px;
     color: #46248A;
@@ -816,8 +815,8 @@ footer a {
 }
 
 .copyright-remark {
-	max-width: 1230px;
-	width: 100%;
+    max-width: 1230px;
+    width: 100%;
     font-size: 14px;
     line-height: 16px;
     color: #46248A;
@@ -3717,7 +3716,7 @@ margin-bottom: 10px;
 
 @media(max-width: 1000px){
 	.menu-links{
-		background: url(../img/5ka/menu-bg-green.png) center no-repeat;
+		background: url(../img/5ka/menu-bg.png) center no-repeat;
 		background-size: 100% 100%;
     }
     
