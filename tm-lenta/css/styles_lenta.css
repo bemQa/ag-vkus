@@ -2759,6 +2759,7 @@ table td {
     header {
     	height: 54px;
         background: transparent;
+        z-index: 4;
     }
 
     .logo {
@@ -3355,6 +3356,17 @@ table td {
 
     .need-reg {
         margin-bottom: 20px;
+    }
+
+    .up {
+        position: fixed;
+        left: 0;
+        bottom: 30px;
+        width: 73px;
+        height: 69px;
+        background: url(../img/lenta/up.svg) center no-repeat;
+        background-size: contain;
+        z-index: 3;
     }
 }
 

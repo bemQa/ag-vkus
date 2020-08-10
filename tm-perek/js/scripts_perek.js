@@ -273,4 +273,21 @@ $(document).ready(function () {
         });
     }
 
+    $(window).on('scroll',function() {
+        var doc = window.pageYOffset;
+        if(doc > 300) {
+            $(".up").fadeIn();
+        } else {
+            $(".up").fadeOut();
+        }
+    });
+
+    $(".up").on("click", function() {
+        var body = $("body, html");
+        body.stop()
+        .animate({
+            scrollTop:0
+        }, 500, 'swing');
+    });
+
 });

@@ -2759,6 +2759,7 @@ table td {
     header {
     	height: 54px;
         background: transparent;
+        z-index: 4;
     }
 
     .logo {
@@ -2998,13 +2999,72 @@ table td {
 		align-items: center;
 	}
 
-    .step {
-        max-width: 240px;
-    	margin-bottom: 40px;
+    .steps .step {
+        max-width: 350px;
+        width: 100%;
+        margin-bottom: 40px;
     }
 
     .step:last-child {
-    	margin-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .step-img {
+        position: absolute;
+        left: -25px;
+    }
+
+    .step2 .step-img {
+        left: -10px;
+    }
+
+    .steps .step4 .step-img {
+        transform: none;
+    }
+
+    .step1 .step-img img {
+        max-width: 350px;
+    }
+
+    .step2 .step-img img {
+        max-width: 320px;
+    }
+
+    .step3 .step-img img {
+        left: 0;
+        right: 0;
+    }
+
+    .step4 .step-img img {
+        max-width: 290px;
+        top: -60px;
+        left: -40px;
+        right: -40px;
+    }
+
+    .step-num {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin-left: 170px;
+    }
+
+    .step-title {
+        font-size: 27px;
+        text-align: left;
+        padding-top: 12px;
+        margin-left: 170px;
+    }
+
+    .step-subtitle {
+        text-align: left;
+        margin-left: 170px;
+    }
+
+    .step-text {
+        margin-left: 170px;
+        text-align: left;
     }
 
     .prizes-block::before {
@@ -3356,6 +3416,17 @@ table td {
     .need-reg {
         margin-bottom: 20px;
     }
+
+    .up {
+        position: fixed;
+        left: 0;
+        bottom: 30px;
+        width: 73px;
+        height: 69px;
+        background: url(../img/5ka/up.svg) center no-repeat;
+        background-size: contain;
+        z-index: 3;
+    }
 }
 
 @media (max-width: 540px) {
@@ -3393,6 +3464,33 @@ table td {
 	.lk-item {
 		max-width: 265px;
 	}
+
+    .step1 .step-img img {
+        max-width: 340px;
+    }
+
+    .step2 .step-img img {
+        max-width: 300px;
+    }
+
+    .step4 .step-img img {
+        max-width: 270px;
+    }
+
+    .step-title {
+        font-size: 24px;
+    }
+
+    .step-subtitle {
+        font-size: 18px;
+    }
+
+    .step-num,
+    .step-title,
+    .step-subtitle,
+    .step-text {
+        margin-left: 160px;
+    }
 }
 
 
