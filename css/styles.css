@@ -724,7 +724,7 @@ header + section {
 }
 
 .fixed .menu-links::before,
-.inner-header.fixed .menu-links::before {
+.inner-header .menu-links::before {
     content: '';
     position: absolute;
     top: 0;
@@ -4655,6 +4655,11 @@ input.error + .vote-checkmark {
         line-height: 21px;
         text-align: center;
         z-index: 10;
+    }
+
+    .fixed .menu-links::before, 
+    .inner-header .menu-links::before {
+        display: none;
     }
 
     .menu-links.active {
