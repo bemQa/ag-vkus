@@ -602,12 +602,16 @@ header {
     justify-content: center;
     -ms-align-items: center;
     align-items: center;
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 44px;
     margin: auto;
     background: #fff;
     z-index: 3;
+}
+
+header + section {
+    margin-top: 44px;
 }
 
 .inner-header {
@@ -3027,6 +3031,279 @@ table td {
     line-height: 1;
 }
 
+.choose-detail-block {
+    padding: 90px 0 0;
+    background: radial-gradient(71.45% 44.06% at 50% 55.94%, #FFF9BD 0%, #F7D431 100%);
+}
+
+.people-big {
+    position: relative;
+    max-width: 860px;
+    width: 100%;
+    margin: auto;
+}
+
+.people-big .people-choc-info {
+    top: 80px;
+    left: 60px;
+    width: 800px;
+    min-height: 400px;
+    height: auto;
+    padding: 20px 25px 12px 230px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.people-choc-info::before {
+    transform: skewX(-5deg);
+}
+
+.choc-left {
+    position: absolute;
+    top: 50px;
+    left: -150px;
+    max-width: 315px;
+}
+
+.choc-right {
+    position: absolute;
+    top: 0;
+    right: -150px;
+    bottom: 0;
+    max-width: 315px;
+    margin: auto;
+}
+
+.people3 .choc-right {
+    top: -100px;
+    max-width: 380px;
+    right: -200px;
+}
+
+.choc-front {
+    position: absolute;
+    top: 0;
+    right: -110px;
+    bottom: 0;
+    max-width: 170px;
+    margin: auto;
+}
+
+.people2 .choc-front {
+    max-width: 150px;
+}
+
+.people3 .choc-front {
+    top: 100px;
+    right: -40px;
+    max-width: 100px;
+}
+
+.people-big .people-choc-wrapper,
+.people-big .people-choc {
+    width: 260px;
+}
+
+.people-big .people-img {
+    top: -20px;
+    right: -25px;
+    width: 150px;
+}
+
+.people-big .people-name {
+    top: -60px;
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.people-city {
+    position: absolute;
+    top: -30px;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 20px;
+    color: #85312C;
+}
+
+.people-big .choc-name {
+    min-height: 86px;
+    font-size: 36px;
+    line-height: 43px;
+    text-shadow: 2px 2px 0px rgba(133, 49, 44, 0.29);
+    margin-bottom: 0;
+}
+
+.people-big .dark .choc-name {
+    text-shadow: 2px 2px 0px #85312C;
+}
+
+.choc-history {
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    height: 162px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #85312C;
+    margin-bottom: 15px;
+}
+
+.choc-history.scroll-content {
+    padding-right: 15px;
+}
+
+.choc-history span {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.dark .choc-history {
+    color: #FFF9BD;
+}
+
+.people-big .ingredients {
+    position: absolute;
+    top: 106px;
+    right: 65px;
+    height: 112px;
+    margin: auto;
+    width: 110px;
+    white-space: nowrap;
+}
+
+.dark-vote {
+    position: absolute;
+    top: 90px;
+    right: 45px;
+    bottom: 0;
+    margin: auto;
+}
+
+.share {
+    position: absolute;
+    bottom: 12px;
+    right: 30px;
+}
+
+.share-text {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFF9BD;
+}
+
+.dark .share-text {
+    color: #FFF9BD;
+}
+
+.share-icons {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.share-icons a {
+    margin: 6px;
+}
+
+.people-big .vote-btn {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: 0;
+    transform: rotate(-1deg) skewX(-25deg);
+}
+
+.people-big .vote-btn span {
+    transform: rotate(1deg) skewX(25deg);
+}
+
+.choc-history-remark {
+    position: absolute;
+    bottom: 8px;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    color: #85312C;
+}
+
+.dark .choc-history-remark {
+    color: #FFF9BD;
+}
+
+.people-choose-info {
+    -ms-align-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+.people-choose-info .choose-people-list {
+    margin-top: 20px;
+}
+
+.prev-people,
+.next-people {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 26px;
+    height: 42px;
+    margin: auto;
+    font-size: 0;
+}
+
+.prev-people.disabled,
+.next-people.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.prev-people {
+    left: -200px;
+    background: url(../img/magnit/arrow-left-white.svg) center no-repeat;
+    background-size: contain;
+}
+
+.next-people {
+    right: -200px;
+    background: url(../img/magnit/arrow-right-white.svg) center no-repeat;
+    background-size: contain;
+}
+
+.choose-detail-block .choose-block {
+    padding-top: 40px;
+    background: none;
+}
+
+.choose-detail-block .footer-choc {
+    max-width: 500px;
+    left: -500px;
+}
+
+.choose-main-title {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #009ED7;
+    margin-bottom: 30px;
+}
+
+.choose-detail-block .choose-main-info {
+    max-width: 330px;
+    margin-left: 400px;
+}
+
+.choose-detail-block .choose-people {
+    max-width: 90px;
+}
+
 @media (max-width: 1280px) {
     .container {
     	max-width: 1000px;
@@ -3480,7 +3757,8 @@ table td {
         bottom: -10px;
     }
 
-    .choose-main-info {
+    .choose-main-info,
+    .choose-detail-block .choose-main-info {
         max-width: 300px;
         margin-left: 0;
     }
@@ -3989,6 +4267,228 @@ table td {
     .vote-btn {
         left: 0;
     }
+
+    .choose-detail-block {
+        padding: 110px 0 50px;
+    }
+
+    .people-big {
+        margin-bottom: 150px;
+    }
+
+    .people-big .people-choc-info {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        padding: 10px 15px 90px;
+        text-align: left;
+    }
+
+    .people-big .people-choc-info::before {
+        transform: rotate(-5deg) skewX(-5deg);
+    }
+
+    .people-big .people-choc-info::after {
+        display: none;
+    }
+
+    .people-big .people-choc-wrapper, 
+    .people-big .people-choc {
+        width: 120px;
+    }
+
+    .people-big .people-choc-wrapper {
+        position: absolute;
+        top: -50px;
+        left: 0;
+    }
+
+    .people-big .people-img {
+        top: -10px;
+        left: auto;
+        right: -10px;
+        width: 60px;
+    }
+    
+    .people-big .people-name {
+        position: absolute;
+        top: -50px;
+        left: 135px;
+        text-align: left;
+        font-size: 18px;
+        line-height: 1;
+        margin-bottom: 0;
+        color: #85312C;
+    }
+
+    .people-city {
+        left: 135px;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .people-big .choc-name {
+        min-height: 48px;
+        font-size: 21px;
+        line-height: 24px;
+        text-align: left;
+        padding-left: 120px;
+    }
+
+    .choc-history {
+        height: 145px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 160px;
+        margin-bottom: 70px;
+    }
+
+    .people-big .ingredients {
+        display: flex;
+        top: 60px;
+        left: 135px;
+        width: auto;
+    }
+
+    .dark-vote {
+        position: absolute;
+        top: 170px;
+        left: 130px;
+        right: auto;
+        bottom: auto;
+        margin: auto;
+        width: 95px;
+    }
+
+    .choc-front {
+        right: 0;
+        bottom: auto;
+        max-width: 110px;
+    }
+
+    .people1 .choc-front {
+        top: 120px;
+        max-width: 80px;
+    }
+
+    .people2 .choc-front {
+        top: 40px;
+        max-width: 100px;
+    }
+
+    .people3 .choc-front {
+        top: 70px;
+        right: 0;
+        max-width: 70px;
+    }
+
+    .choc-bottom {
+        position: absolute;
+        bottom: -150px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 0;
+    }
+
+    .people3 .choc-bottom {
+        bottom: -180px;
+    }
+
+    .choc-history-remark {
+        bottom: auto;
+        top: 380px;
+    }
+
+    .people-big .vote-btn {
+        width: 170px;
+        height: 50px;
+        padding: 15px 0;
+        z-index: 1;
+    }
+
+    .people-big .vote-btn::before,
+    .people-big .vote-btn::after {
+        width: 170px;
+        height: 50px;
+    }
+
+    .people-big .vote-btn span {
+        font-size: 19px;
+    }
+
+    .share {
+        right: 15px;
+        bottom: 80px;
+        z-index: 1;
+    }
+
+    .share-icons a {
+        width: 30px;
+        margin: 4px;
+    }
+
+    .prev-people, 
+    .next-people {
+        top: auto;
+        bottom: -120px;
+        height: auto;
+        width: auto;
+        font-size: 16px;
+        line-height: 1;
+        color: #85312C;
+        outline: none;
+        background: none;
+    }
+
+    .prev-people {
+        padding-left: 20px;
+    }
+
+    .next-people {
+        padding-right: 20px;
+    }
+
+    .prev-people::after, 
+    .next-people::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 12px;
+        height: 20px;
+        margin: auto;
+    }
+
+    .prev-people::after {
+        left: 0;
+        background: url(../img/magnit/arrow-left-swiper.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .next-people::after {
+        right: 0;
+        background: url(../img/magnit/arrow-right-swiper.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .choose-detail-block .container {
+        padding: 0;
+    }
+
+    .people-choose-info {
+        padding: 0 10px;
+    }
+
+    .choose-main-title {
+        font-size: 35px;
+        line-height: 42px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 540px) {
@@ -4040,7 +4540,7 @@ table td {
     }
 
     .step-title {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .step-subtitle {
@@ -4053,6 +4553,20 @@ table td {
     .step-text,
     .step-subtext {
         margin-left: 160px;
+    }
+
+    .people-big .choc-name {
+        font-size: 16px;
+    }
+
+    .people-big .ingredients,
+    .choc-history-remark,
+    .share-text {
+        font-size: 12px;
+    }
+
+    .share {
+        right: 5px;
     }
 }
 

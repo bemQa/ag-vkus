@@ -70,6 +70,7 @@ $(document).ready(function () {
     if(window.innerWidth < 1000) {
         $('.products-list').scrollbar();
     }
+    $('.choc-history').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({
@@ -335,4 +336,15 @@ $(document).ready(function () {
             scrollTop:0
         }, 500, 'swing');
     });
+
+    if($('.main-block').length && window.innerWidth < 1000) {
+        $(window).on('scroll load', function () {
+            var top = $(window).scrollTop();
+            if(top >= 50) {
+                $('header').addClass('inner-header');
+            } else {
+                $('header').removeClass('inner-header');
+            }
+        });
+    }
 });

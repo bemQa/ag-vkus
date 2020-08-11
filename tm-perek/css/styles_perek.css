@@ -602,12 +602,16 @@ header {
     justify-content: center;
     -ms-align-items: center;
     align-items: center;
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 44px;
     margin: auto;
     background: #fff;
     z-index: 3;
+}
+
+header + section {
+    margin-top: 44px;
 }
 
 .inner-header {
