@@ -260,7 +260,7 @@ $(document).ready(function () {
             ]
         });
     } else {
-        $('.lk-items').scrollbar();
+        $('.lk-items').not('.lk-items-loyalty').scrollbar();
     }
 
     function formatDate(date) {

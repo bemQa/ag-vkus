@@ -4445,6 +4445,210 @@ input.error + .vote-checkmark {
     background-size: contain;
 }
 
+.tab-loyalty-title {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #009ED7;
+}
+
+.tab-loyalty-text {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #85312C;
+    margin-bottom: 30px;
+}
+
+.tab-loyalty-text b {
+    color: #009ED7;
+}
+
+.loyalty-progress-wrapper {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 1104px;
+    width: 100%;
+    margin: 0 auto 130px;
+}
+
+.loyalty-progress-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: rgba(0, 158, 215, .5);
+    transform: skewX(-15deg);
+}
+
+.loyalty-progress {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 184px;
+    width: 100%;
+    height: 50px;
+}
+
+.loyalty-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #009ED7;
+    transform: skewX(-15deg);
+    z-index: 0;
+}
+
+.loyalty-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% ;
+    height: 100%;
+    margin: auto;
+    border-right: 2px dashed #fff;
+    transform: skewX(-15deg);
+}
+
+.loyalty-progress:last-child::after {
+    display: none;
+}
+
+.loyalty-progress-remark {
+    position: absolute;
+    top: 60px;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #85312C;
+}
+
+.loyalty-progress-coins {
+    position: relative;
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.expert .loyalty-progress-coins,
+.expert .loyalty-progress-title,
+.expert .loyalty-progress-text {
+    color: #E30613;
+}
+
+.loyalty-progress-coins::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    background: url(../img/coin.png) center no-repeat;
+    background-size: contain;
+}
+
+.loyalty-progress-title-wrapper {
+    position: relative;
+    margin-right: 15px;
+}
+
+.loyalty-progress-title {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.loyalty-progress-text {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.tab-loyalty .lk-item-row:nth-child(1) {
+    align-items: center;
+    justify-content: center;
+    min-height: 75px;
+}
+
+.tab-loyalty .prize-date {
+    text-align: center;
+}
+
+.prize-prompt {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+}
+
+.tab-loyalty .prize-info {
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: left;
+}
+
+.tab-loyalty .get-coin {
+    margin-right: 10px;
+}
+
+.prize-info-title {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.tab-loyalty .prize-preview {
+    -ms-align-items: center;
+    align-items: center;
+    height: 70px;
+}
+
+.tab-loyalty .prize-preview img {
+    height: 53px;
+}
+
+.tab-loyalty .lk-item-row:nth-child(2) {
+    justify-content: center;
+}
+
+.tab-loyalty .get-prize-text {
+    position: relative;
+    color: #009ED7;
+}
+
 @media (max-width: 1280px) {
     .container {
     	max-width: 1000px;
@@ -6004,6 +6208,89 @@ input.error + .vote-checkmark {
         background: url(../img/up.svg) center no-repeat;
         background-size: contain;
         z-index: 3;
+    }
+
+    .loyalty-wr {
+        display: flex;
+    }
+
+    .loyalty-progress-wrapper {
+        flex-direction: column;
+        max-width: 108px;
+        margin: 0 5px 0 0;
+    }
+
+    .loyalty-progress-wrapper::before {
+        transform: none;
+    }
+
+    .loyalty-progress {
+        flex-direction: column;
+        text-align: center;
+        max-width: 108px;
+        height: 158px;
+    }
+
+    .loyalty-progress::after {
+        border-right: 0;
+        border-bottom: 2px dashed #fff;
+        transform: none;
+    }
+
+    .loyalty-progress:first-child {
+        height: 100px;
+    }
+
+    .loyalty-progress-bar {
+        width: 100%;
+        height: 0;
+        transform: none;
+    }
+
+    .loyalty-progress-coins {
+        line-height: 40px;
+        margin-right: 10px;
+    }
+
+    .loyalty-progress-title-wrapper {
+        margin-right: 0;
+    }
+
+    .tab-loyalty .lk-item {
+        height: 155px;
+        margin: 0 0 3px;
+        padding: 5px;
+        opacity: .5;
+    }
+
+    .tab-loyalty .lk-item.active {
+        opacity: 1;
+    }
+
+    .tab-loyalty .lk-item:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 98px;
+    }
+
+    .tab-loyalty .lk-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .prize-announce {
+        text-transform: uppercase;
+    }
+
+    .prize-prompt {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .tab-loyalty .get-prize-text {
+        font-size: 14px;
+        line-height: 16px;
     }
 }
 
