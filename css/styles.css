@@ -4595,6 +4595,10 @@ input.error + .vote-checkmark {
     color: #fff;
 }
 
+.tab-loyalty .lk-item.mobile-visible {
+    display: none !important;
+}
+
 .tab-loyalty .lk-item-row:nth-child(1) {
     align-items: center;
     justify-content: center;
@@ -4609,7 +4613,7 @@ input.error + .vote-checkmark {
     font-style: italic;
     font-weight: 800;
     font-size: 28px;
-    line-height: 33px;
+    line-height: 50px;
     text-transform: uppercase;
 }
 
@@ -4636,10 +4640,6 @@ input.error + .vote-checkmark {
     height: 70px;
 }
 
-.tab-loyalty .prize-preview img {
-    height: 53px;
-}
-
 .tab-loyalty .lk-item-row:nth-child(2) {
     justify-content: center;
 }
@@ -4647,6 +4647,151 @@ input.error + .vote-checkmark {
 .tab-loyalty .get-prize-text {
     position: relative;
     color: #009ED7;
+}
+
+.loyalty-what {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50px;
+    background: #DD1010;
+    box-shadow: 0px 2px 2px rgba(133, 49, 44, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.loyalty-tooltip {
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    right: -15px;
+    width: calc(100% + 30px);
+    height: 95px;
+    margin: auto;
+    background: #DD1010;
+    z-index: 1;
+}
+
+.loyalty-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 14px;
+    height: 14px;
+    background: url(../img/x-white.svg) center no-repeat;
+    background-size: contain;
+}
+
+.loyalty-tooltip span {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.loyalty-popup {
+    padding-top: 15%;
+}
+
+.loyalty-popup .popup__inner {
+    padding-top: 90px;
+}
+
+.loyalty-popup-title {
+    position: absolute;
+    top: -75px;
+    left: -70px;
+    right: 0;
+    width: 390px;
+    margin: auto;
+}
+
+.loyalty-popup .loyalty-btn:not(.winners-btn) {
+    width: 150px;
+    height: 40px;
+    transform: rotate(-2deg) skewX(-25deg);
+}
+
+.loyalty-popup .loyalty-btn:not(.winners-btn) span {
+    font-size: 18px;
+    transform: rotate(2deg) skewX(25deg);
+}
+
+.loyalty-popup .loyalty-btn:not(.winners-btn)::before {
+    width: 150px;
+    height: 40px;
+}
+
+.loyalty-popup .loyalty-btn:not(.winners-btn)::after {
+    width: 150px;
+    height: 40px;
+}
+
+.loyalty-popup-week {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loyalty-popup-success,
+.loyalty-popup-wrong {
+    position: relative;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1;
+    text-align: left;
+    max-width: 220px;
+    width: max-content;
+    margin: 0 auto 30px;
+    padding-left: 40px;
+}
+
+.loyalty-popup-success span,
+.loyalty-popup-wrong span {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.loyalty-popup-success::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 39px;
+    height: 58px;
+    background: url(../img/loyalty-success.png) center no-repeat;
+    background-size: contain;
+}
+
+.loyalty-popup-wrong::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 39px;
+    height: 41px;
+    background: url(../img/loyalty-wrong.png) center no-repeat;
+    background-size: contain;
 }
 
 @media (max-width: 1280px) {
@@ -6267,6 +6412,10 @@ input.error + .vote-checkmark {
         opacity: 1;
     }
 
+    .tab-loyalty .lk-item.mobile-visible {
+        display: flex !important;
+    }
+
     .tab-loyalty .lk-item:first-child {
         display: flex;
         align-items: center;
@@ -6277,6 +6426,10 @@ input.error + .vote-checkmark {
 
     .tab-loyalty .lk-item:last-child {
         margin-bottom: 0;
+    }
+
+    .tab-loyalty .lk-item-loyalty .lk-item-row:nth-child(1) {
+        padding-top: 15px;
     }
 
     .prize-announce {
@@ -6291,6 +6444,42 @@ input.error + .vote-checkmark {
     .tab-loyalty .get-prize-text {
         font-size: 14px;
         line-height: 16px;
+    }
+
+    .tab-loyalty .prize-preview {
+        height: 50px;
+    }
+
+    .tab-loyalty .prize-info {
+        margin-top: 5px;
+    }
+
+    .tab-loyalty .prize-date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .tab-loyalty .active .prize-date {
+        display: block;
+    }
+
+    .loyalty-what {
+        display: none;
+        top: 0;
+        right: 0;
+    }
+
+    .lk-item.active .loyalty-what {
+        display: block;
+    }
+
+    .loyalty-tooltip {
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        width: calc(100% + 10px);
     }
 }
 

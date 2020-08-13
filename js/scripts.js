@@ -433,4 +433,12 @@ $(document).ready(function () {
             }
         });
     }
+
+    $('.loyalty-what').click(function(e) {
+        e.preventDefault();
+        $(this).next('.loyalty-tooltip').fadeIn();
+    });
+    $('.loyalty-tooltip').click(function(e) {
+        $(this).fadeOut();
+    });
 });
