@@ -639,7 +639,7 @@ header {
     z-index: 3;
 }
 
-header + section {
+header ~ section:nth-child(3) {
     margin-top: 44px;
 }
 
