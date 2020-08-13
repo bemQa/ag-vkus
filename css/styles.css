@@ -4599,6 +4599,14 @@ input.error + .vote-checkmark {
     display: none !important;
 }
 
+.tab-loyalty .lk-item {
+    opacity: .5;
+}
+
+.tab-loyalty .lk-item.active {
+    opacity: 1;
+}
+
 .tab-loyalty .lk-item-row:nth-child(1) {
     align-items: center;
     justify-content: center;
@@ -4607,6 +4615,19 @@ input.error + .vote-checkmark {
 
 .tab-loyalty .prize-date {
     text-align: center;
+    opacity: 0;
+}
+
+.tab-loyalty .active .prize-date {
+    opacity: 1;
+}
+
+.lk-item-loyalty .prize-date {
+    display: none;
+}
+
+.lk-item-loyalty.active .prize-date {
+    display: block;
 }
 
 .prize-prompt {
@@ -6405,11 +6426,6 @@ input.error + .vote-checkmark {
         height: 155px;
         margin: 0 0 3px;
         padding: 5px;
-        opacity: .5;
-    }
-
-    .tab-loyalty .lk-item.active {
-        opacity: 1;
     }
 
     .tab-loyalty .lk-item.mobile-visible {
@@ -6458,11 +6474,6 @@ input.error + .vote-checkmark {
         position: absolute;
         top: 0;
         left: 0;
-        display: none;
-    }
-
-    .tab-loyalty .active .prize-date {
-        display: block;
     }
 
     .loyalty-what {
