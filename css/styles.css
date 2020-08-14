@@ -699,6 +699,7 @@ header ~ section:nth-child(3) {
 	position: relative;
 	max-width: 1250px;
 	width: 100%;
+    margin: auto;
 }
 
 .logo {
