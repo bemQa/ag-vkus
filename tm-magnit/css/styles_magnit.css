@@ -622,7 +622,6 @@ header + section {
 	position: relative;
 	max-width: 1250px;
 	width: 100%;
-	margin: auto;
 }
 
 .logo {
@@ -3465,7 +3464,7 @@ table td {
 	    right: 0;
 	    max-width: 100%;
 	    width: 100%;
-	    min-height: 520px;
+	    min-height: 580px;
         transition: all .2s linear;
         background: url(../img/magnit/menu-bg.png) center no-repeat;
     	background-size: 100% 100%;
@@ -3501,6 +3500,11 @@ table td {
         padding-left: 25px;
     }
 
+    .menu-links .main-ncp-link {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .menu-links .login-link::before {
         width: 15px;
         height: 14px;
@@ -3515,22 +3519,38 @@ table td {
 
     .menu-btn::before,
     .profile-link::before,
-    .menu-links .menu-link:not(.login-link)::after {
+    .menu-links .menu-link::after {
         display: none;
     }
 
     .menu-links .login-link::after {
-    	content: '';
-	    position: absolute;
-	    top: -40px;
-	    left: -125px;
-	    right: -125px;
-	    bottom: auto;
-	    width: 100%;
-	    min-width: 300px;
-	    height: 1px;
-	    margin: auto;
-	    background: #fff;
+        content: '';
+        display: block;
+        position: absolute;
+        top: -40px;
+        left: -125px;
+        right: -125px;
+        bottom: auto;
+        width: 100%;
+        min-width: 300px;
+        height: 1px;
+        margin: auto;
+        background: #fff !important;
+    }
+
+    .menu-links .main-ncp-link::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: -125px;
+        right: -125px;
+        bottom: auto;
+        width: 100%;
+        min-width: 300px;
+        height: 1px;
+        margin: auto;
+        background: #fff;
     }
 
     footer {
@@ -4446,10 +4466,12 @@ table td {
     }
 
     .prev-people {
+        left: 0;
         padding-left: 20px;
     }
 
     .next-people {
+        right: 0;
         padding-right: 20px;
     }
 

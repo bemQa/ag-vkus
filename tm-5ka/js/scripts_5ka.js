@@ -70,6 +70,7 @@ $(document).ready(function () {
     if(window.innerWidth < 1000) {
         $('.products-list').scrollbar();
     }
+    $('.choc-history').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({
@@ -299,5 +300,51 @@ $(document).ready(function () {
                 $('header').removeClass('inner-header');
             }
         });
+    }
+
+    if(window.innerWidth > 1000) {
+        $('.people').click(function() {
+            $('.people').removeClass('active');
+            $(this).toggleClass('active');
+            if($('.people-list').hasClass('choose') && !$('.people').hasClass('active')) {
+                $(this).parent('.people-list').removeClass('choose');
+            } else {
+                $(this).parent('.people-list').addClass('choose');
+            }
+        });
+    }
+
+    if ($('.people-list.mobile-visible').length && window.innerWidth < 1000) {
+
+        function swipperInit() {
+            var wrap = $('.people-list.mobile-visible');
+
+            var swiper = new Swiper(wrap, {
+                slidesPerView: 2,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+
+                effect: 'coverflow',
+                centeredSlides: true,
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 50,
+                    depth: 400,
+                    modifier: 1,
+                    slideShadows: false
+                },
+
+                loop: true,
+                speed: 400,
+                observer: true,
+                observeParents: true
+            });
+            swiper.init();
+        }
+
+        swipperInit();
+
     }
 });
