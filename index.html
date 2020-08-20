@@ -823,7 +823,16 @@
                     	<div class="input-field">
                     		<input type="text" name="phone" class="phone-mask" placeholder="Мобильный телефон" required>                    		
                     	</div>
-                    	<div class="phone-text">На данный номер будет отправлен денежный приз в случае выигрыша</div>
+                    	<div class="phone-text mb20">На данный номер будет отправлен денежный приз в случае выигрыша</div>
+                    	<div class="popup__desc">Введите символы с картинки</div>
+                    	<div class="captcha-wrap">
+                    		<div class="captcha-field">
+                    			<img src="img/captcha.png" alt="">
+                    		</div>
+                    		<div class="input-field">
+	                    		<input type="text" name="captcha" required>
+	                    	</div>
+                    	</div>
                     	<div class="checkbox-wrapper">
 							<div class="input-field checkbox-field">
 	                            <label for="check-rules" class="checkbox">
@@ -837,6 +846,13 @@
 	                                <input id="check-data" name="check-data" type="checkbox" required>
 	                                <span class="checkmark"></span>
 	                                <span class="checkbox-text">Я согласен на обработку моих <a href="#!" class="rules-link link" target="_blank">персональных данных</a></span>
+	                            </label> 
+	                        </div>
+	                        <div class="input-field checkbox-field">
+	                            <label for="check-mndlz" class="checkbox">
+	                                <input id="check-mndlz" name="check-mndlz" type="checkbox" required>
+	                                <span class="checkmark"></span>
+	                                <span class="checkbox-text">Я согласен получать рассылки по акциям Mondelez</span>
 	                            </label> 
 	                        </div>
 						</div>
