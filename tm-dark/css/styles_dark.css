@@ -1989,6 +1989,7 @@ table td {
 	font-size: 18px;
 	line-height: 21px;
 	text-align: center;
+    color: #1D3A8E;
 }
 
 .products-item-desc {
@@ -1996,6 +1997,7 @@ table td {
 	font-size: 14px;
 	line-height: 16px;
 	text-align: center;
+    color: #1D3A8E;
 }
 
 .faq-block {
@@ -3958,6 +3960,7 @@ table td {
 
     .feedback-wrap {
     	padding-top: 30px;
+        padding-bottom: 80px;
     }
 
     .feedback-wrap::before {
@@ -4746,6 +4749,7 @@ table td{
 }
 .choose-lk .choose-people {
 	max-width: 92px;
+    filter: drop-shadow(0px 0px 85px #FFFFFF);
 }
 .choose-lk .btn {
 	margin: 0;
@@ -4826,5 +4830,9 @@ table td{
     
     .choose-lk .btn {
     	margin: auto;
+    }
+
+    .choose-lk .choose-people {
+        filter: none;
     }
 }
