@@ -3389,6 +3389,36 @@ table td {
     width: 40px;
 }
 
+.captcha-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.captcha-field {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.captcha-field::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #009ED7;
+    transform: skewX(-10deg);
+}
+
+.captcha-field img {
+    position: relative;
+    max-width: 128px;
+}
+
 @media (max-width: 1280px) {
     .container {
     	max-width: 1000px;
