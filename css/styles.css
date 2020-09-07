@@ -639,7 +639,17 @@ header {
     z-index: 3;
 }
 
-header ~ section:nth-child(3) {
+header ~ .main-block,
+header ~ .top30-block,
+header ~ .winners-block,
+header ~ .prizes-page-block,
+header ~ .products-block,
+header ~ .faq-block,
+header ~ .lk-block,
+header ~ .error-block,
+header ~ .choose-page-block,
+header ~ .choose-detail-block,
+header ~ .cookies-block {
     margin-top: 44px;
 }
 
@@ -813,6 +823,9 @@ header ~ section:nth-child(3) {
 	top: 0;
 	right: 0;
 	width: 140px;
+}
+
+.lang-wrap.active {
     z-index: 2;
 }
 
@@ -5045,7 +5058,7 @@ input.error + .vote-checkmark {
 	    right: 0;
 	    max-width: 100%;
 	    width: 100%;
-	    min-height: 620px;
+	    min-height: 680px;
         transition: all .2s linear;
         background: url(../img/menu-bg.png) center no-repeat;
     	background-size: 100% 100%;
@@ -5086,7 +5099,7 @@ input.error + .vote-checkmark {
 
     .menu-links .login-link,
     .inner-header .menu-links .login-link {
-    	margin-top: 40px;
+    	margin-top: 25px;
         padding-left: 25px;
     }
 
@@ -5104,14 +5117,15 @@ input.error + .vote-checkmark {
 
     .menu-btn::before,
     .profile-link::before,
-    .menu-links .menu-link:not(.login-link)::after {
+    .menu-links .menu-link::after {
         display: none;
     }
 
     .menu-links .login-link::after {
     	content: '';
+        display: block !important;
 	    position: absolute;
-	    top: -40px;
+	    top: -25px;
 	    left: -125px;
 	    right: -125px;
 	    bottom: auto;
@@ -6220,6 +6234,7 @@ input.error + .vote-checkmark {
         line-height: 24px;
         text-align: left;
         padding-left: 120px;
+        text-shadow: none !important;
     }
 
     .choc-history {
@@ -6521,6 +6536,115 @@ input.error + .vote-checkmark {
         left: -5px;
         right: -5px;
         width: calc(100% + 10px);
+    }
+
+    .menu-links .tm-menu-link,
+    .inner-header .menu-links .tm-menu-link {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .menu-links .tm-menu-link::after,
+    .inner-header .menu-links .tm-menu-link::after {
+        content: '';
+        display: block !important;
+        position: absolute;
+        top: -25px;
+        left: -125px;
+        right: -125px;
+        bottom: auto;
+        width: 100%;
+        min-width: 300px;
+        height: 1px;
+        margin: auto;
+        background: #fff;
+    }
+
+    .tm-menu-mob {
+        display: none !important;
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100%;
+        min-height: 600px;
+        background: #009ed7;
+        padding: 40px 15px 100px;
+        z-index: 1;
+    }
+
+    .tm-menu-mob.active {
+        display: block !important;
+    }
+
+    .menu-links .close-tm-menu {
+        position: relative;
+        display: block;
+        text-align: left;
+        font-weight: normal;
+        margin-bottom: 50px;
+        padding-left: 20px;
+    }
+
+    .menu-links .close-tm-menu::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 0;
+        bottom: 0;
+        width: 10px;
+        height: 14px;
+        margin: auto;
+        background: url(../img/arrow-back.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .menu-links .tm-link-mob {
+        display: block;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .menu-links .tm-link-mob.disabled {
+        pointer-events: none;
+        opacity: .6;
+    }
+
+    .menu-links .tm-link-mob:nth-child(2)::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -125px;
+        right: -125px;
+        bottom: auto;
+        width: 100%;
+        min-width: 300px;
+        height: 1px;
+        margin: auto;
+        background: #fff;
+    }
+
+    .menu-links .tm-link-mob::after {
+        content: '';
+        position: absolute;
+        top: auto;
+        left: -125px;
+        right: -125px;
+        bottom: -15px;
+        width: 100%;
+        min-width: 300px;
+        height: 1px;
+        margin: auto;
+        background: #fff;
+    }
+
+    .menu-links .tm-link-mob:last-child::after {
+        display: none;
+    }
+
+    .menu-links .tm-link-mob span {
+        display: block;
+        font-weight: normal;
+        font-size: 16px;
     }
 }
 

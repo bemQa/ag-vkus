@@ -3059,7 +3059,7 @@ table td {
 
 .choc-left {
     position: absolute;
-    top: 50px;
+    top: 25px;
     left: -150px;
     max-width: 315px;
 }
@@ -3071,6 +3071,12 @@ table td {
     bottom: 0;
     max-width: 315px;
     margin: auto;
+}
+
+.people1 .choc-right {
+    top: -80px;
+    right: -175px;
+    max-width: 330px;
 }
 
 .people3 .choc-right {
@@ -3626,7 +3632,8 @@ table td {
     .main-choc {
     	left: 0;
     	right: 0;
-    	max-width: 320px;
+        bottom: -60px;
+    	max-width: 375px;
     	margin: auto;
     }
 
@@ -3636,7 +3643,7 @@ table td {
     }
 
     .main-block .btn-wrapper {
-        margin-top: 100px;
+        margin-top: 160px;
     }
 
     .btn:not(.winners-btn) {
@@ -4852,7 +4859,7 @@ margin-bottom: 10px;
 
 @media(max-width: 1000px){    
     .main-block{
-        height: 512px;
+        height: 570px;
     }
 
 	.prizes{

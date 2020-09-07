@@ -4958,11 +4958,12 @@ line-height: 32px;
     }
     
     .slogan{
-        height: 106px;
+        max-width: 100%;
+        height: auto;
     }
 
 	.slogan-logo{
-		height: 33px;
+		height: 44px;
 	}
 
 	.slogan-logo img{
@@ -4970,11 +4971,11 @@ line-height: 32px;
     }
     
     .main-block{
-        height: 512px;
+        height: 570px;
     }
 
 	.main-choc{
-        top: 373px;
+        top: 420px;
 	}
 
 	.prizes{

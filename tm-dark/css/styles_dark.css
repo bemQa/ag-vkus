@@ -3681,8 +3681,8 @@ table td {
     }
 
     .main-block::before {
-    	height: 125%;
-    	background: url(../img/dark/bg1.png) 0 center no-repeat;
+    	height: 116%;
+    	background: url(../img/dark/bg1-mob.png) 20% center no-repeat;
     	background-size: cover;
     }
 
@@ -4563,12 +4563,6 @@ table td {
         line-height: 42px;
         text-align: center;
     }
-}
-
-@media (max-width: 540px) {
-	.main-block::before {
-	    background-position-x: 10%;
-	}
 }
 
 @media (max-width: 370px) {

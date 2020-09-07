@@ -3021,7 +3021,7 @@ table td {
     }
 
     .slogan {
-        max-width: 277px;
+        max-width: 100%;
     }
 
     .btn:not(.winners-btn) {
@@ -3655,7 +3655,7 @@ table td{
 	}
 
 	.main-choc{
-		top: 335px;
+		top: 380px;
 	}
 
 	.prizes{

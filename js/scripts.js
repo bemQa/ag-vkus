@@ -13,16 +13,25 @@ $(document).ready(function () {
         });
     });
 
+    $('.tm-menu-link').click(function() {
+        $('.tm-menu-mob').addClass('active');
+    });
+
+    $('.close-tm-menu').click(function() {
+        $('.tm-menu-mob').removeClass('active');
+    });
+
     $('.lang-select').click(function(e){
         e.preventDefault();
+        $('.lang-wrap').toggleClass('active');
         (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
 
         $('.lang-dropdown').fadeToggle();
         $('body').on('click', function (e) {
-            var div = $('.lang-select, .lang-dropdown');
+            var div = $('.lang-wrap, .lang-select, .lang-dropdown');
 
             if (!div.is(e.target) && div.has(e.target).length === 0) {
-                $('.lang-select').removeClass('active');
+                $('.lang-wrap, .lang-select').removeClass('active');
                 $('.lang-dropdown').fadeOut();
             }
         });
