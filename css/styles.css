@@ -3797,7 +3797,7 @@ input.error + .vote-checkmark {
 }
 
 .top30-text {
-    max-width: 770px;
+    max-width: 900px;
     width: 100%;
     font-size: 21px;
     line-height: 25px;
@@ -4169,6 +4169,25 @@ input.error + .vote-checkmark {
     max-width: 315px;
 }
 
+.people11 .choc-left,
+.people12 .choc-left,
+.people15 .choc-left,
+.people16 .choc-left,
+.people17 .choc-left,
+.people18 .choc-left {
+    top: 25px;
+}
+
+.people14 .choc-left {
+    top: -25px;
+    max-width: 418px;
+}
+
+.people19 .choc-left {
+    top: 0;
+    max-width: 353px;
+}
+
 .choc-right {
     position: absolute;
     top: 0;
@@ -4222,6 +4241,65 @@ input.error + .vote-checkmark {
     max-width: 350px;
     top: -35px;
     right: -180px;
+}
+
+.people11 .choc-right {
+    max-width: 409px;
+    top: -35px;
+    right: -250px;
+}
+
+.people12 .choc-right {
+    max-width: 321px;
+    top: -35px;
+    right: -160px;
+}
+
+.people13 .choc-right {
+    max-width: 338px;
+    right: -170px;
+}
+
+.people14 .choc-right {
+    max-width: 420px;
+    top: -35px;
+    right: -220px;
+}
+
+.people15 .choc-right {
+    max-width: 342px;
+    top: 30px;
+    right: -180px;
+}
+
+.people16 .choc-right {
+    max-width: 352px;
+    top: 0;
+    right: -180px;
+}
+
+.people17 .choc-right {
+    max-width: 345px;
+    top: 20px;
+    right: -190px;
+}
+
+.people18 .choc-right {
+    max-width: 331px;
+    top: 20px;
+    right: -160px;
+}
+
+.people19 .choc-right {
+    max-width: 401px;
+    top: -35px;
+    right: -190px;
+}
+
+.people20 .choc-right {
+    max-width: 304px;
+    top: -35px;
+    right: -130px;
 }
 
 .choc-front {
@@ -4280,6 +4358,44 @@ input.error + .vote-checkmark {
 .people10 .choc-front {
     top: -50px;
     max-width: 150px;
+}
+
+.people11 .choc-front {
+    top: -200px;
+    right: -200px;
+    max-width: 315px;
+}
+
+.people12 .choc-front {
+    top: -70px;
+}
+
+.people13 .choc-front {
+    top: 50px;
+    right: -20px;
+    max-width: 70px;
+}
+
+.people14 .choc-front {
+    right: -80px;
+    max-width: 150px;
+}
+
+.people18 .choc-front {
+    top: 80px;
+    right: -100px;
+    max-width: 150px;
+}
+
+.people19 .choc-front {
+    top: 30px;
+    max-width: 90px;
+}
+
+.people20 .choc-front {
+    top: 150px;
+    right: -70px;
+    max-width: 115px;
 }
 
 .people-big .people-choc-wrapper,
@@ -4856,6 +4972,45 @@ input.error + .vote-checkmark {
 .captcha-field img {
     position: relative;
     max-width: 128px;
+}
+
+.superprize-winners {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 850px;
+    width: 100%;
+    margin: 45px auto 80px;
+}
+
+.superprize-winner {
+    max-width: 223px;
+    width: 100%;
+    margin: 0 30px;
+}
+
+.superprize-winner-img {
+    position: relative;
+}
+
+.superprize-winner-img::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    right: -30px;
+    width: 150px;
+    height: 150px;
+    background: url(../img/superwinners/1kk.png) center no-repeat;
+    background-size: 230px;
+}
+
+.superprize-winner-name {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #85312C;
 }
 
 @media (max-width: 1280px) {
@@ -6316,6 +6471,51 @@ input.error + .vote-checkmark {
         max-width: 80px;
     }
 
+    .people11 .choc-front {
+        top: -50px;
+        right: 0;
+        max-width: 158px;
+    }
+
+    .people12 .choc-front {
+        top: 0;
+        max-width: 102px;
+    }
+
+    .people13 .choc-front {
+        top: 30px;
+        right: 0;
+    }
+
+    .people14 .choc-front {
+        top: 40px;
+        right: 0;
+        max-width: 80px;
+    }
+
+    .people15 .choc-front {
+        top: 30px;
+        right: 0;
+        max-width: 100px;
+    }
+
+    .people16 .choc-front {
+        top: 30px;
+        max-width: 80px;
+    }
+
+    .people18 .choc-front {
+        top: 50px;
+        right: 0;
+        max-width: 80px;
+    }
+
+    .people20 .choc-front {
+        top: 70px;
+        right: 0;
+        max-width: 80px;
+    }
+
     .choc-bottom {
         position: absolute;
         bottom: -150px;
@@ -6645,6 +6845,15 @@ input.error + .vote-checkmark {
         display: block;
         font-weight: normal;
         font-size: 16px;
+    }
+
+    .superprize-winners {
+        flex-direction: column;
+        margin: 20px auto 30px;
+    }
+
+    .superprize-winner {
+        margin: 20px auto;
     }
 }
 
