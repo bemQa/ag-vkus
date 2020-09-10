@@ -3120,6 +3120,13 @@ table td {
     max-width: 315px;
 }
 
+.people5 .choc-left,
+.people6 .choc-left,
+.people7 .choc-left,
+.people8 .choc-left {
+    top: 25px;
+}
+
 .choc-right {
     position: absolute;
     top: 0;
@@ -3147,6 +3154,36 @@ table td {
     right: -180px;
 }
 
+.people5 .choc-right {
+    max-width: 409px;
+    top: -35px;
+    right: -250px;
+}
+
+.people6 .choc-right {
+    max-width: 321px;
+    top: -35px;
+    right: -160px;
+}
+
+.people7 .choc-right {
+    max-width: 342px;
+    top: 30px;
+    right: -180px;
+}
+
+.people8 .choc-right {
+    max-width: 345px;
+    top: 20px;
+    right: -190px;
+}
+
+.people9 .choc-right {
+    max-width: 304px;
+    top: -35px;
+    right: -130px;
+}
+
 .choc-front {
     position: absolute;
     top: 0;
@@ -3166,15 +3203,31 @@ table td {
     max-width: 80px;
 }
 
-.people8 .choc-front {
+.people3 .choc-front {
     top: 50px;
     right: -50px;
     max-width: 76px;
 }
 
-.people10 .choc-front {
+.people4 .choc-front {
     top: -50px;
     max-width: 150px;
+}
+
+.people5 .choc-front {
+    top: -200px;
+    right: -200px;
+    max-width: 315px;
+}
+
+.people6 .choc-front {
+    top: -70px;
+}
+
+.people9 .choc-front {
+    top: 150px;
+    right: -70px;
+    max-width: 115px;
 }
 
 .people-big .people-choc-wrapper,
@@ -3192,6 +3245,7 @@ table td {
     top: -60px;
     font-size: 21px;
     line-height: 24px;
+    color: #85312C;
 }
 
 .people-city {
@@ -4459,6 +4513,29 @@ table td {
 
     .people4 .choc-front {
         top: 50px;
+        max-width: 80px;
+    }
+
+    .people5 .choc-front {
+        top: -50px;
+        right: 0;
+        max-width: 158px;
+    }
+
+    .people6 .choc-front {
+        top: 0;
+        max-width: 102px;
+    }
+
+    .people7 .choc-front {
+        top: 30px;
+        right: 0;
+        max-width: 100px;
+    }
+
+    .people9 .choc-front {
+        top: 70px;
+        right: 0;
         max-width: 80px;
     }
 
