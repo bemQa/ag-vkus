@@ -80,6 +80,7 @@ $(document).ready(function () {
         $('.products-list').scrollbar();
     }
     $('.choc-history').scrollbar();
+    $('.factory-winners-right, .loyalty-winners-list').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({

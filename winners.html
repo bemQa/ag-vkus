@@ -91,250 +91,439 @@
 			</header>
 			<section class="winners-block">
 				<div class="container">
-					<div class="page-title">Главный приз</div>
-					<div class="superprize-winners">
-						<div class="superprize-winner">
-							<div class="superprize-winner-img">
-								<img src="img/superwinners/1.png" alt="">
-							</div>
-							<div class="superprize-winner-name">Александр Р. <br>+7 (***) ***-9999</div>
-						</div>
-						<div class="superprize-winner">
-							<div class="superprize-winner-img">
-								<img src="img/superwinners/2.png" alt="">
-							</div>
-							<div class="superprize-winner-name">Александр Р. <br>+7 (***) ***-9999</div>
-						</div>
-						<div class="superprize-winner">
-							<div class="superprize-winner-img">
-								<img src="img/superwinners/3.png" alt="">
-							</div>
-							<div class="superprize-winner-name">Александр Р. <br>+7 (***) ***-9999</div>
-						</div>
-					</div>
 					<div class="page-title">Победители</div>
-					<div class="filters">
-						<div class="date-filter">
-							<input type="text" class="datepicker-here" readonly>
+					<div class="tabs tabs-winners">
+						<div class="tab tab-winners tab-trigger active" data-tab="tab-daily">Ежедневные призы</div>
+						<div class="tab tab-winners tab-trigger" data-tab="tab-main">Главные призы</div>
+						<div class="tab tab-winners tab-trigger" data-tab="tab-loyalty">Программа лояльности</div>
+					</div>
+					<div class="tabs-content tabs-content-winners">
+						<div class="tab-item tab-item-winners tab-daily active">
+							<div class="filters">
+								<div class="date-filter">
+									<input type="text" class="datepicker-here" readonly>
+								</div>
+								<form class="input-field phone-filter">
+		                    		<input type="text" name="phone" class="phone-mask" placeholder="Поиск по номеру телефона" required="">
+		                    		<button class="search"></button>
+		                    	</form>
+							</div>
+							<div class="table-wrapper winners-table">
+								<table>
+									<thead>
+										<tr>
+											<th class="desktop-visible">Имя</th>
+											<th class="desktop-visible">Телефон</th>
+											<th class="desktop-visible">Дата</th>
+											<th class="mobile-visible">Участник</th>
+											<th>Приз</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="desktop-visible">Александр Р.</td>
+											<td class="desktop-visible">+7 (***) ***-4563</td>
+											<td class="desktop-visible">10.07.2020</td>
+											<td class="mobile-visible">
+												<div class="winner-info">
+													<div class="winner-name">Александр Р.</div>
+													<div>
+														+7 (***) ***-4563 <br>
+														10.07.2020
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="win-info">
+													<div class="win-img">
+														<img src="img/prizes/phone.png" alt="">
+													</div>
+													<span>500 рублей <br>на телефон</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="desktop-visible">Александр Р.</td>
+											<td class="desktop-visible">+7 (***) ***-4563</td>
+											<td class="desktop-visible">10.07.2020</td>
+											<td class="mobile-visible">
+												<div class="winner-info">
+													<div class="winner-name">Александр Р.</div>
+													<div>
+														+7 (***) ***-4563 <br>
+														10.07.2020
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="win-info">
+													<div class="win-img">
+														<img src="img/prizes/300.png" alt="">
+													</div>
+													<span>Сертификат <br>на 300 рублей</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="desktop-visible">Александр Р.</td>
+											<td class="desktop-visible">+7 (***) ***-4563</td>
+											<td class="desktop-visible">10.07.2020</td>
+											<td class="mobile-visible">
+												<div class="winner-info">
+													<div class="winner-name">Александр Р.</div>
+													<div>
+														+7 (***) ***-4563 <br>
+														10.07.2020
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="win-info">
+													<div class="win-img">
+														<img src="img/prizes/500.png" alt="">
+													</div>
+													<span>Сертификат <br>на 500 рублей</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="desktop-visible">Александр Р.</td>
+											<td class="desktop-visible">+7 (***) ***-4563</td>
+											<td class="desktop-visible">10.07.2020</td>
+											<td class="mobile-visible">
+												<div class="winner-info">
+													<div class="winner-name">Александр Р.</div>
+													<div>
+														+7 (***) ***-4563 <br>
+														10.07.2020
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="win-info">
+													<div class="win-img">
+														<img src="img/prizes/1000.png" alt="">
+													</div>
+													<span>Сертификат <br>на 1000 рублей</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="desktop-visible">Александр Р.</td>
+											<td class="desktop-visible">+7 (***) ***-4563</td>
+											<td class="desktop-visible">10.07.2020</td>
+											<td class="mobile-visible">
+												<div class="winner-info">
+													<div class="winner-name">Александр Р.</div>
+													<div>
+														+7 (***) ***-4563 <br>
+														10.07.2020
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="win-info">
+													<div class="win-img">
+														<img src="img/prizes/2000.png" alt="">
+													</div>
+													<span>Сертификат <br>на 2000 рублей</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="desktop-visible">Александр Р.</td>
+											<td class="desktop-visible">+7 (***) ***-4563</td>
+											<td class="desktop-visible">10.07.2020</td>
+											<td class="mobile-visible">
+												<div class="winner-info">
+													<div class="winner-name">Александр Р.</div>
+													<div>
+														+7 (***) ***-4563 <br>
+														10.07.2020
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="win-info">
+													<div class="win-img">
+														<img src="img/prizes/2000.png" alt="">
+													</div>
+													<span>Сертификат <br>на 2000 рублей</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="desktop-visible">Александр Р.</td>
+											<td class="desktop-visible">+7 (***) ***-4563</td>
+											<td class="desktop-visible">10.07.2020</td>
+											<td class="mobile-visible">
+												<div class="winner-info">
+													<div class="winner-name">Александр Р.</div>
+													<div>
+														+7 (***) ***-4563 <br>
+														10.07.2020
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="win-info">
+													<div class="win-img">
+														<img src="img/prizes/2000.png" alt="">
+													</div>
+													<span>Сертификат <br>на 2000 рублей</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="desktop-visible">Александр Р.</td>
+											<td class="desktop-visible">+7 (***) ***-4563</td>
+											<td class="desktop-visible">10.07.2020</td>
+											<td class="mobile-visible">
+												<div class="winner-info">
+													<div class="winner-name">Александр Р.</div>
+													<div>
+														+7 (***) ***-4563 <br>
+														10.07.2020
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="win-info">
+													<div class="win-img">
+														<img src="img/prizes/2000.png" alt="">
+													</div>
+													<span>Сертификат <br>на 2000 рублей</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="desktop-visible">Александр Р.</td>
+											<td class="desktop-visible">+7 (***) ***-4563</td>
+											<td class="desktop-visible">10.07.2020</td>
+											<td class="mobile-visible">
+												<div class="winner-info">
+													<div class="winner-name">Александр Р.</div>
+													<div>
+														+7 (***) ***-4563 <br>
+														10.07.2020
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="win-info">
+													<div class="win-img">
+														<img src="img/prizes/2000.png" alt="">
+													</div>
+													<span>Сертификат <br>на 2000 рублей</span>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
-						<form class="input-field phone-filter">
-                    		<input type="text" name="phone" class="phone-mask" placeholder="Поиск по номеру телефона" required="">
-                    		<button class="search"></button>
-                    	</form>
-					</div>
-					<div class="table-wrapper winners-table">
-						<table>
-							<thead>
-								<tr>
-									<th class="desktop-visible">Имя</th>
-									<th class="desktop-visible">Телефон</th>
-									<th class="desktop-visible">Дата</th>
-									<th class="mobile-visible">Участник</th>
-									<th>Приз</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="desktop-visible">Александр Р.</td>
-									<td class="desktop-visible">+7 (***) ***-4563</td>
-									<td class="desktop-visible">10.07.2020</td>
-									<td class="mobile-visible">
-										<div class="winner-info">
-											<div class="winner-name">Александр Р.</div>
-											<div>
-												+7 (***) ***-4563 <br>
-												10.07.2020
-											</div>
+						<div class="tab-item tab-item-winners tab-main">
+							<div class="superprize-winners">
+								<img src="img/winners-page/winners-main-title.png" class="winners-main-title" alt="">
+								<div class="superprize-winner">
+									<div class="superprize-winner-img">
+										<img src="img/voting/people1.png" alt="">
+									</div>
+									<div class="superprize-winner-info">
+										<div class="superprize-winner-name">Александра Р.</div>
+										<div class="superprize-winner-text">г. Москва</div>
+									</div>
+								</div>
+								<div class="superprize-winner">
+									<div class="superprize-winner-img">
+										<img src="img/winners-page/who.png" alt="">
+									</div>
+									<div class="superprize-winner-text">Победитель будет <br>определен <b>27 сентября</b></div>
+								</div>
+								<div class="superprize-winner">
+									<div class="superprize-winner-img">
+										<img src="img/winners-page/who.png" alt="">
+									</div>
+									<div class="superprize-winner-text">Победитель будет <br>определен <b>10 октября</b></div>
+								</div>
+							</div>
+							<div class="factory-winners">
+								<img src="img/winners-page/winners-factory-title.png" class="winners-factory-title" alt="">
+								<div class="factory-winners-left">
+									<div class="factory-main-winner">
+										<div class="factory-main-winner-img">
+											<img src="img/voting/people1.png" alt="">
 										</div>
-									</td>
-									<td>
-										<div class="win-info">
-											<div class="win-img">
-												<img src="img/prizes/phone.png" alt="">
-											</div>
-											<span>500 рублей <br>на телефон</span>
+										<div class="factory-main-winner-info">
+											<div class="factory-main-winner-title">Татьяна Р. <span>+7 (***) ***-4456</span></div>
+											<div class="factory-main-winner-choc">Создатель вкуса-победителя «Улетный банан»</div>
 										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="desktop-visible">Александр Р.</td>
-									<td class="desktop-visible">+7 (***) ***-4563</td>
-									<td class="desktop-visible">10.07.2020</td>
-									<td class="mobile-visible">
-										<div class="winner-info">
-											<div class="winner-name">Александр Р.</div>
-											<div>
-												+7 (***) ***-4563 <br>
-												10.07.2020
-											</div>
+									</div>
+									<div class="factory-main-winner">
+										<div class="factory-main-winner-img">
+											<img src="img/voting/people1.png" alt="">
 										</div>
-									</td>
-									<td>
-										<div class="win-info">
-											<div class="win-img">
-												<img src="img/prizes/300.png" alt="">
-											</div>
-											<span>Сертификат <br>на 300 рублей</span>
+										<div class="factory-main-winner-info">
+											<div class="factory-main-winner-title">Татьяна Р. <span>+7 (***) ***-4456</span></div>
+											<div class="factory-main-winner-choc">Создатель вкуса-победителя «Улетный банан»</div>
 										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="desktop-visible">Александр Р.</td>
-									<td class="desktop-visible">+7 (***) ***-4563</td>
-									<td class="desktop-visible">10.07.2020</td>
-									<td class="mobile-visible">
-										<div class="winner-info">
-											<div class="winner-name">Александр Р.</div>
-											<div>
-												+7 (***) ***-4563 <br>
-												10.07.2020
-											</div>
+									</div>
+									<div class="factory-main-winner">
+										<div class="factory-main-winner-img">
+											<img src="img/voting/people1.png" alt="">
 										</div>
-									</td>
-									<td>
-										<div class="win-info">
-											<div class="win-img">
-												<img src="img/prizes/500.png" alt="">
-											</div>
-											<span>Сертификат <br>на 500 рублей</span>
+										<div class="factory-main-winner-info">
+											<div class="factory-main-winner-title">Татьяна Р. <span>+7 (***) ***-4456</span></div>
+											<div class="factory-main-winner-choc">Создатель вкуса-победителя «Улетный банан»</div>
 										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="desktop-visible">Александр Р.</td>
-									<td class="desktop-visible">+7 (***) ***-4563</td>
-									<td class="desktop-visible">10.07.2020</td>
-									<td class="mobile-visible">
-										<div class="winner-info">
-											<div class="winner-name">Александр Р.</div>
-											<div>
-												+7 (***) ***-4563 <br>
-												10.07.2020
-											</div>
+									</div>
+								</div>
+								<div class="winners-factory-separate"></div>
+								<div class="factory-winners-right">
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+									<div class="factory-winner">
+										<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item tab-item-winners tab-loyalty">
+							<div class="loyalty-winners">
+								<img src="img/winners-page/winners-loyalty-title.png" class="winners-loyalty-title" alt="">
+								<div class="loyalty-winners-wrapper">
+									<div class="loyalty-winners-prize-info">
+										<div class="loyalty-winners-prize-img iphone">
+											<img src="img/prizes/iphone11.png" alt="">
 										</div>
-									</td>
-									<td>
-										<div class="win-info">
-											<div class="win-img">
-												<img src="img/prizes/1000.png" alt="">
-											</div>
-											<span>Сертификат <br>на 1000 рублей</span>
+										<div class="loyalty-winners-prize-name">Смартфон iPhone 11</div>
+									</div>
+									<div class="loyalty-winners-list">
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="desktop-visible">Александр Р.</td>
-									<td class="desktop-visible">+7 (***) ***-4563</td>
-									<td class="desktop-visible">10.07.2020</td>
-									<td class="mobile-visible">
-										<div class="winner-info">
-											<div class="winner-name">Александр Р.</div>
-											<div>
-												+7 (***) ***-4563 <br>
-												10.07.2020
-											</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-									<td>
-										<div class="win-info">
-											<div class="win-img">
-												<img src="img/prizes/2000.png" alt="">
-											</div>
-											<span>Сертификат <br>на 2000 рублей</span>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="desktop-visible">Александр Р.</td>
-									<td class="desktop-visible">+7 (***) ***-4563</td>
-									<td class="desktop-visible">10.07.2020</td>
-									<td class="mobile-visible">
-										<div class="winner-info">
-											<div class="winner-name">Александр Р.</div>
-											<div>
-												+7 (***) ***-4563 <br>
-												10.07.2020
-											</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-									<td>
-										<div class="win-info">
-											<div class="win-img">
-												<img src="img/prizes/2000.png" alt="">
-											</div>
-											<span>Сертификат <br>на 2000 рублей</span>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="desktop-visible">Александр Р.</td>
-									<td class="desktop-visible">+7 (***) ***-4563</td>
-									<td class="desktop-visible">10.07.2020</td>
-									<td class="mobile-visible">
-										<div class="winner-info">
-											<div class="winner-name">Александр Р.</div>
-											<div>
-												+7 (***) ***-4563 <br>
-												10.07.2020
-											</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-									<td>
-										<div class="win-info">
-											<div class="win-img">
-												<img src="img/prizes/2000.png" alt="">
-											</div>
-											<span>Сертификат <br>на 2000 рублей</span>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="desktop-visible">Александр Р.</td>
-									<td class="desktop-visible">+7 (***) ***-4563</td>
-									<td class="desktop-visible">10.07.2020</td>
-									<td class="mobile-visible">
-										<div class="winner-info">
-											<div class="winner-name">Александр Р.</div>
-											<div>
-												+7 (***) ***-4563 <br>
-												10.07.2020
-											</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-									<td>
-										<div class="win-info">
-											<div class="win-img">
-												<img src="img/prizes/2000.png" alt="">
-											</div>
-											<span>Сертификат <br>на 2000 рублей</span>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-								</tr>
-								<tr>
-									<td class="desktop-visible">Александр Р.</td>
-									<td class="desktop-visible">+7 (***) ***-4563</td>
-									<td class="desktop-visible">10.07.2020</td>
-									<td class="mobile-visible">
-										<div class="winner-info">
-											<div class="winner-name">Александр Р.</div>
-											<div>
-												+7 (***) ***-4563 <br>
-												10.07.2020
-											</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-									<td>
-										<div class="win-info">
-											<div class="win-img">
-												<img src="img/prizes/2000.png" alt="">
-											</div>
-											<span>Сертификат <br>на 2000 рублей</span>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
 										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="winners-loyalty-separate"></div>
+								<div class="loyalty-winners-wrapper">
+									<div class="loyalty-winners-prize-info">
+										<div class="loyalty-winners-prize-img apple-watch">
+											<img src="img/prizes/apple-watch.png" alt="">
+										</div>
+										<div class="loyalty-winners-prize-name">Смартчасы Apple Watch</div>
+									</div>
+									<div class="loyalty-winners-list">
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+										<div class="factory-winner">
+											<div class="factory-main-winner-title">Константин К. <span>+7 (***) ***-4456</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
 				</div>
 			</section>
 			<section class="choose-block">

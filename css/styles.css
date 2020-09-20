@@ -4975,26 +4975,74 @@ input.error + .vote-checkmark {
 }
 
 .superprize-winners {
+    position: relative;
     display: flex;
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    max-width: 850px;
+    max-width: 1000px;
     width: 100%;
-    margin: 45px auto 80px;
+    min-height: 290px;
+    margin: 85px auto 100px;
+}
+
+.superprize-winners::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(../img/winners-page/winners-main-bg.png) 110% 30% no-repeat, #FEF09C;
+    background-size: 500px;
+    box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.07);
+    transform: skewX(-10deg);
+    z-index: 0;
+}
+
+/*.superprize-winners::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(../img/winners-page/winners-main-bg.png) right no-repeat;
+    background-size: 500px;
+    z-index: 0;
+}*/
+
+.winners-main-title {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    max-width: 352px;
+    width: 100%;
+    margin: auto;
 }
 
 .superprize-winner {
-    max-width: 223px;
+    position: relative;
+    max-width: 195px;
     width: 100%;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 
 .superprize-winner-img {
     position: relative;
+    max-width: 120px;
+    width: 100%;
+    margin: auto;
 }
 
-.superprize-winner-img::after {
+/*.superprize-winner-img::after {
     content: '';
     position: absolute;
     bottom: -25px;
@@ -5003,14 +5051,227 @@ input.error + .vote-checkmark {
     height: 150px;
     background: url(../img/superwinners/1kk.png) center no-repeat;
     background-size: 230px;
-}
+}*/
 
 .superprize-winner-name {
     font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 24px;
     text-align: center;
     color: #85312C;
+}
+
+.superprize-winner-text {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #85312C;
+}
+
+.tabs-winners {
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+.tab-winners {
+    color: rgba(255, 255, 255, .6);
+    background: rgba(221, 16, 16, .3);
+    width: auto;
+}
+
+.tab-winners.active {
+    color: #fff;
+    background: #DD1010;
+}
+
+.factory-winners {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 290px;
+    margin: 0 auto 80px;
+    color: #85312C;
+}
+
+.factory-winners::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(../img/winners-page/winners-factory-bg.png) -50px 15px no-repeat, #FEF09C;
+    background-size: 365px;
+    box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.07);
+    transform: skewX(-10deg);
+    z-index: 0;
+}
+
+.winners-factory-title {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    max-width: 376px;
+    width: 100%;
+    margin: auto;
+}
+
+.factory-winners-left {
+    position: relative;
+}
+
+.factory-main-winner {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.factory-main-winner:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.factory-main-winner-img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.factory-main-winner-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+
+.factory-main-winner-title span {
+    font-weight: normal;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.factory-main-winner-choc {
+    font-size: 10px;
+    line-height: 1;
+}
+
+.winners-factory-separate {
+    position: relative;
+    width: 1px;
+    height: 100%;
+    min-height: 182px;
+    background: #85312C;
+    opacity: .2;
+    margin: 0 22px;
+}
+
+.factory-winners-right {
+    position: relative;
+    max-height: 169px;
+    margin-top: 5px;
+}
+
+.factory-winners-right.scroll-content {
+    padding-right: 20px;
+}
+
+.factory-winner:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.loyalty-winners {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 500px;
+    margin: 85px auto 100px;
+    color: #85312C;
+}
+
+.loyalty-winners::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(../img/winners-page/winners-loyalty-bg.png) 120% 120% no-repeat, #FEF09C;
+    background-size: 500px;
+    box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.07);
+    transform: skewX(-10deg);
+    z-index: 0;
+}
+
+.winners-loyalty-title {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    max-width: 411px;
+    width: 100%;
+    margin: auto;
+}
+
+.loyalty-winners-prize-info {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.loyalty-winners-prize-img {
+    margin-right: 15px;
+}
+
+.loyalty-winners-prize-img.iphone {
+    width: 54px;
+}
+
+.loyalty-winners-prize-img.apple-watch {
+    width: 44px;
+}
+
+.loyalty-winners-prize-name {
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 26px;
+    color: #009ED7;
+}
+
+.loyalty-winners-wrapper {
+    min-width: 275px;
+}
+
+.loyalty-winners-list {
+    max-height: 292px;
+    margin: 22px;
+}
+
+.loyalty-winners-list.scroll-content {
+    padding-right: 20px;
+}
+
+.winners-loyalty-separate {
+    position: relative;
+    width: 1px;
+    height: 100%;
+    min-height: 374px;
+    background: #85312C;
+    opacity: .2;
+    margin: 0 22px;
 }
 
 @media (max-width: 1280px) {
@@ -6847,13 +7108,98 @@ input.error + .vote-checkmark {
         font-size: 16px;
     }
 
+    .tabs-winners {
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .tab-winners {
+        font-size: 14px;
+        white-space: inherit;
+    }
+
     .superprize-winners {
         flex-direction: column;
-        margin: 20px auto 30px;
+        margin: 50px auto 100px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .superprize-winners::before {
+        background-position: right 100%;
+        background-size: 280px;
+        transform: skewX(0deg) skewY(-3deg);
+    }
+
+    .winners-main-title {
+        top: -60px;
+        max-width: 252px;
     }
 
     .superprize-winner {
-        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        -ms-align-items: center;
+        align-items: center;
+        max-width: 262px;
+        margin: 10px auto;
+    }
+
+    .superprize-winner-img {
+        max-width: 70px;
+        margin: 0 15px 0 0;
+    }
+
+    .superprize-winner-name {
+        text-align: left;
+        line-height: 21px;
+    }
+
+    .superprize-winner-text {
+        text-align: left;
+    }
+
+    .factory-winners {
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    .factory-winners::before {
+        background-position: left 110%;
+        background-size: 334px;
+        transform: skewX(0deg) skewY(-3deg);
+    }
+
+    .winners-factory-title {
+        top: -60px;
+        max-width: 276px;
+    }
+
+    .winners-factory-separate,
+    .winners-loyalty-separate {
+        width: calc(100% - 30px);
+        min-height: 1px;
+        margin: 30px auto;
+    }
+
+    .loyalty-winners {
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    .loyalty-winners::before {
+        background-position: 30% 110%;
+        background-size: 522px;
+        transform: skewX(0deg) skewY(-3deg);
+    }
+
+    .winners-loyalty-title {
+        top: -60px;
+        max-width: 311px;
     }
 }
 
@@ -6974,5 +7320,11 @@ input.error + .vote-checkmark {
     .step-text {
         margin-left: 160px;
     }
-
+    
+    .tab-winners {
+        max-width: 90px;
+        font-size: 13px;
+        margin: 0 2px;
+        padding: 10px 5px;
+    }
 }
