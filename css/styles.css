@@ -5274,6 +5274,20 @@ input.error + .vote-checkmark {
     margin: 0 22px;
 }
 
+.iswinner {
+    position: absolute;
+    bottom: 35px;
+    left: 185px;
+    max-width: 258px;
+    width: 100%;
+}
+
+.vkus-winner {
+    max-width: 509px;
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
 @media (max-width: 1280px) {
     .container {
     	max-width: 1000px;
@@ -7200,6 +7214,20 @@ input.error + .vote-checkmark {
     .winners-loyalty-title {
         top: -60px;
         max-width: 311px;
+    }
+
+    .iswinner {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        max-width: 200px;
+        height: 55px;
+    }
+
+    .iswinner img {
+        position: absolute;
+        bottom: -15px;
+        left: -15px;
     }
 }
 
