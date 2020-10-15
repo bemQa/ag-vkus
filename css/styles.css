@@ -6468,6 +6468,10 @@ input.error + .vote-checkmark {
         line-height: 12px;
     }
 
+    .vote-field.disabled .vote-prize-name {
+        font-size: 8px;
+    }
+
     .vote-prize-desc {
         font-size: 16px;
     }
