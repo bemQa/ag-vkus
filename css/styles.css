@@ -3487,6 +3487,11 @@ table td {
     padding: 4px 15px 4px 20px;
 }
 
+.vote-field.disabled {
+    filter: grayscale(.99);
+    pointer-events: none;
+}
+
 .vote-field * {
     position: relative;
     z-index: 1;
@@ -3644,6 +3649,10 @@ input.error + .vote-checkmark {
     text-transform: uppercase;
     color: #FFF9BD;
     text-shadow: 2px 0px 0px rgba(133, 49, 44, 0.29);
+}
+
+.vote-field.disabled .vote-prize-name {
+    font-size: 9px;
 }
 
 .vote-prize-desc {
