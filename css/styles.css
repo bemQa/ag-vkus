@@ -4183,7 +4183,8 @@ input.error + .vote-checkmark {
 .people15 .choc-left,
 .people16 .choc-left,
 .people17 .choc-left,
-.people18 .choc-left {
+.people18 .choc-left,
+.people28 .choc-left {
     top: 25px;
 }
 
@@ -4195,6 +4196,34 @@ input.error + .vote-checkmark {
 .people19 .choc-left {
     top: 0;
     max-width: 353px;
+}
+
+.people21 .choc-left {
+    max-width: 335px;
+}
+
+.people22 .choc-left {
+    max-width: 305px;
+    top: 0;
+}
+
+.people23 .choc-left {
+    max-width: 369px;
+    top: 0;
+}
+
+.people24 .choc-left {
+    max-width: 418px;
+    top: 25px;
+}
+
+.people27 .choc-left {
+    max-width: 340px;
+    top: 25px;
+}
+
+.people30 .choc-left {
+    top: 0;
 }
 
 .choc-right {
@@ -4311,6 +4340,46 @@ input.error + .vote-checkmark {
     right: -130px;
 }
 
+.people21 .choc-right {
+    max-width: 422px;
+    top: 35px;
+}
+
+.people22 .choc-right {
+    max-width: 331px;
+    top: -25px;
+    right: -165px;
+}
+
+.people23 .choc-right {
+    max-width: 353px;
+    top: -25px;
+    right: -190px;
+}
+
+.people24 .choc-right {
+    max-width: 518px;
+    top: -65px;
+    right: -160px;
+}
+
+.people27 .choc-right {
+    max-width: 345px;
+    right: -180px;
+}
+
+.people28 .choc-right {
+    max-width: 330px;
+    top: -50px;
+    right: -165px;
+}
+
+.people30 .choc-right {
+    max-width: 390px;
+    top: -50px;
+    right: -180px;
+}
+
 .choc-front {
     position: absolute;
     top: 0;
@@ -4405,6 +4474,41 @@ input.error + .vote-checkmark {
     top: 150px;
     right: -70px;
     max-width: 115px;
+}
+
+.people21 .choc-front {
+    max-width: 93px;
+    right: -60px;
+}
+
+.people22 .choc-front {
+    max-width: 136px;
+    top: -50px;
+    right: -40px;
+}
+
+.people23 .choc-front,
+.people26 .choc-front {
+    max-width: 300px;
+    top: -75px;
+    right: -200px;
+}
+
+.people24 .choc-front {
+    max-width: 90px;
+    top: -50px;
+    right: -50px;
+}
+
+.people27 .choc-front {
+    max-width: 100px;
+    top: -100px;
+    right: -50px;
+}
+
+.people28 .choc-front {
+    max-width: 80px;
+    right: -50px;
 }
 
 .people-big .people-choc-wrapper,
@@ -6804,6 +6908,52 @@ input.error + .vote-checkmark {
         max-width: 80px;
     }
 
+    .people21 .choc-front {
+        top: 25px;
+        right: 0;
+        max-width: 100px;
+    }
+
+    .people22 .choc-front {
+        top: 25px;
+        right: 0;
+        max-width: 90px;
+    }
+
+    .people23 .choc-front {
+        top: -50px;
+        right: 0;
+        max-width: 100px;
+    }
+
+    .people24 .choc-front {
+        max-width: 80px;
+        top: 25px;
+        right: 0;
+    }
+
+    .people26 .choc-front {
+        top: 25px;
+        right: 0;
+        max-width: 100px;
+    }
+
+    .people27 .choc-front {
+        top: 25px;
+        right: 0;
+        max-width: 80px;
+    }
+
+    .people28 .choc-front {
+        top: 25px;
+        right: 0;
+        max-width: 80px;
+    }
+
+    .people30 .choc-front {
+        top: 40px;
+    }
+
     .choc-bottom {
         position: absolute;
         bottom: -150px;
@@ -6811,6 +6961,31 @@ input.error + .vote-checkmark {
         right: 0;
         margin: auto;
         z-index: 0;
+    }
+
+    .people23 .choc-bottom {
+        max-width: 322px;
+        bottom: -120px;
+    }
+
+    .people24 .choc-bottom {
+        max-width: 275px;
+        bottom: -110px;
+    }
+
+    .people28 .choc-bottom {
+        max-width: 287px;
+        bottom: -110px;
+    }
+
+    .people29 .choc-bottom {
+        max-width: 247px;
+        bottom: -110px;
+    }
+
+    .people30 .choc-bottom {
+        max-width: 276px;
+        bottom: -110px;
     }
 
     .choc-history-remark {
