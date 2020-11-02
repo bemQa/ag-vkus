@@ -7439,7 +7439,10 @@ input.error + .vote-checkmark {
 	}
 
     .dzen-plug {
-        height: 500px;
+        max-width: 328px;
+        height: 1242px;
+        background: url(../img/dzen/dzen-plug-mob.png) center 30px no-repeat;
+        background-size: cover;
     }
 }
 
