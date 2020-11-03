@@ -2122,6 +2122,10 @@ span.error {
     margin-right: 50px;
 }
 
+.mt100 {
+    margin-top: 100px;
+}
+
 .input-field input:not([type="checkbox"]),
 .input-field textarea {
     width: 100%;
@@ -5415,6 +5419,438 @@ input.error + .vote-checkmark {
     background-size: contain;
 }
 
+.dzen-wrapper {
+    background: url(../img/dzen/dzen-bg.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.dzen-header {
+    background: #F6D344;
+}
+
+.dzen-header .menu-links {
+    margin: 0 auto;
+}
+
+.dzen-header .lang-dropdown {
+    background: #F6D344;
+}
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    position: fixed;
+    top: 200px;
+    right: 0;
+    width: 308px;
+    height: 145px;
+    padding: 25px 15px 20px;
+    background: url(../img/dzen/notification-bg.svg) center no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+
+.notification-close {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: url(../img/dzen/notification-close.svg) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.notification-title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DD1010;
+    transform: rotate(-3.29deg);
+}
+
+.notification-text {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #DD1010;
+    transform: rotate(-3.29deg);
+    margin-bottom: 10px;
+}
+
+.notification-link {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #1C0F0D;
+    transform: rotate(-3.29deg);
+}
+
+.dzen-main-block {
+    margin-bottom: 60px;
+}
+
+.dzen-main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+}
+
+.dzen-kv-wrapper {
+    position: relative;
+}
+
+.dzen-kv-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -65px;
+    right: 0;
+    margin: auto;
+    width: 511px;
+    height: 612px;
+    background: url(../img/dzen/mandala.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.dzen-kv {
+    position: relative;
+    max-width: 789px;
+    width: 100%;
+}
+
+.picto-5ka {
+    position: absolute;
+    top: 140px;
+    right: -60px;
+    width: 229px;
+    height: 274px;
+    padding: 135px 15px 45px;
+    background: url(../img/dzen/picto-5ka.png) center no-repeat;
+    background-size: contain;
+}
+
+.picto-5ka-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.picto-5ka-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.dzen-steps-title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.dzen-step:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.dzen-step-img {
+    max-width: 121px;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+
+.dzen-step-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dzen-step-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.dzen-step-text span {
+    color: #F6D344;
+}
+
+.dzen-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 174px;
+    height: 70px;
+    margin: auto;
+    padding: 25px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: url(../img/dzen/btn.svg) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.dzen-btn:hover {
+    background: url(../img/dzen/btn-hover.svg) center no-repeat;
+    background-size: contain;
+}
+
+.dzen-btn.disabled {
+    background: url(../img/dzen/btn-disabled.svg) center no-repeat;
+    background-size: contain;
+}
+
+.dzen-btn.btn-long {
+    width: 238px;
+    background: url(../img/dzen/btn-long.svg) center no-repeat;
+    background-size: contain;
+}
+
+.dzen-btn.btn-long:hover {
+    background: url(../img/dzen/btn-long-hover.svg) center no-repeat;
+    background-size: contain;
+}
+
+.dzen-btn.btn-long.disabled {
+    pointer-events: none;
+    background: url(../img/dzen/btn-long-disabled.svg) center no-repeat;
+    background-size: contain;
+}
+
+.dzen-popup .popup__wrap {
+    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    color: #85312C;
+}
+
+.dzen-popup .popup__wrap::before {
+    display: none;
+}
+
+.dzen-popup .close-popup {
+    top: -20px;
+    right: -20px;
+}
+
+.dzen-popup .close-popup:hover svg {
+    transform: rotate(90deg);
+}
+
+.dzen-popup .close-popup:hover svg path {
+    stroke: none;
+}
+
+.dzen-popup .popup__inner {
+    max-width: 270px;
+    padding: 20px 0 30px;
+}
+
+.dzen-popup .popup__title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #85312C;
+}
+
+.dzen-popup .popup__desc {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.restore-pwd {
+    position: relative;
+}
+
+.restore-pwd .restore-link {
+    position: static;
+    font-size: 12px;
+    line-height: 14px;
+    color: #85312C;
+}
+
+.dzen-popup .popup-form {
+    max-width: 260px;
+}
+
+.dzen-popup .input-field {
+    margin-bottom: 30px;
+}
+
+.dzen-popup .input-field .input-label {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.dzen-popup .input-field input:not([type="checkbox"]) {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'OfficinaSans';
+    font-size: 14px;
+    line-height: 1;
+    color: #85312C;
+    background: #fff;
+    border: 1px solid #85312C;
+    border-radius: 25px;
+    transition: all .2s linear;
+    box-shadow: none;
+    transform: none;
+}
+
+.dzen-popup .popup-form + div {
+    margin-top: 30px;
+}
+
+.dzen-popup .input-field input.error:not([type="checkbox"]), 
+.dzen-popup .input-field textarea.error, 
+.dzen-wrapper .input-field select.error + .select2-container .select2-selection--single, 
+.dzen-wrapper .input-field input.error:not([type="checkbox"]), 
+.dzen-wrapper .input-field textarea.error {
+    color: #E60012;
+    border: 1px solid #E60012;
+}
+
+.dzen-popup .checkbox-field {
+    text-align: left;
+    max-width: 230px;
+}
+
+.dzen-popup .checkbox {
+    padding-left: 35px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    min-height: 25px;
+    line-height: 14px;
+}
+
+.dzen-popup .checkbox input {
+    -webkit-appearance: none;
+    padding: 0;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.dzen-popup .checkmark {
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: 1px solid #F6D344;
+    border-radius: 10px;
+}
+
+.dzen-popup .checkbox input:checked + .checkmark {
+    background: #F6D344;
+}
+
+.dzen-popup .checkbox input:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: url(../img/dzen/checked.svg) center no-repeat;
+    background-size: contain;
+}
+
+.dzen-popup .checkbox-text {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.dzen-popup .rules-link {
+    color: #85312C;
+}
+
+.dzen-popup .captcha-wrap {
+    -ms-align-items: center;
+    align-items: center;
+    position: relative;
+    min-height: 110px;
+    margin-bottom: 30px;
+}
+
+.dzen-popup .captcha-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 100%;
+    background: #F6D344;
+    transform: none;
+}
+
+.dzen-popup .captcha-wrap .popup__desc {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+.dzen-popup .captcha-wrap .captcha-field {
+    margin-top: 20px;
+}
+
+.dzen-popup .captcha-wrap .input-field {
+    max-width: 100px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.dzen-popup .captcha-field::before {
+    display: none;
+}
+
 @media (max-width: 1280px) {
     .container {
     	max-width: 1000px;
@@ -5515,6 +5951,14 @@ input.error + .vote-checkmark {
     .next-people {
         right: 0;
     }
+
+    .dzen-kv {
+        max-width: 670px;
+    }
+
+    .picto-5ka {
+        top: 100px;
+    }  
 }
 
 @media (max-width: 1000px) {
@@ -7430,6 +7874,75 @@ input.error + .vote-checkmark {
         position: absolute;
         bottom: -15px;
         left: -15px;
+    }
+
+    .dzen-header .menu-links {
+        min-height: 580px;
+        background: url(../img/dzen/menu-bg.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .dzen-header .menu-links a {
+        margin-bottom: 35px;
+    }
+
+    .dzen-header .menu-links .main-ncp-link {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .dzen-header .menu-links .main-ncp-link::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: -125px;
+        right: -125px;
+        bottom: auto;
+        width: 100%;
+        min-width: 300px;
+        height: 1px;
+        margin: auto;
+        background: #fff !important;
+    }
+
+    .dzen-main-wrapper {
+        flex-direction: column;
+    }
+
+    .dzen-kv-wrapper::before {
+        top: -25px;
+        left: 0;
+        width: 325px;
+        height: 389px;
+    }
+
+    .dzen-kv {
+        padding-top: 70px;
+        margin-bottom: 15px;
+    }
+
+    .picto-5ka {
+        top: -40px;
+        left: 0;
+        right: auto;
+        width: 136px;
+        height: 162px;
+        padding: 75px 0 30px;
+    }
+
+    .picto-5ka-title {
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    .picto-5ka-text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .dzen-steps {
+        margin-top: 30px;
     }
 }
 

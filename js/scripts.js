@@ -167,10 +167,10 @@ $(document).ready(function () {
     }
 
     // восстановление пароля
-    $('#restore-password .btn').click(function(e){
+    $('#restore-password .btn, #restore-password .dzen-btn').click(function(e){
         e.preventDefault();
         if($('#restore-password form').valid()) {
-            $('#restore-password .btn').addClass('disabled');
+            $('#restore-password .btn, #restore-password .dzen-btn').addClass('disabled');
             $('.clock-text, .after-send').show();
             $('.before-send').hide();
             let dt = new Date();
@@ -184,7 +184,7 @@ $(document).ready(function () {
                 $(this).parent().hide();
                 $('.after-send').hide();
                 $('.before-send').show();
-                $('#restore-password .btn').removeClass('disabled');
+                $('#restore-password .btn, #restore-password .dzen-btn').removeClass('disabled');
             });
         }
     });
@@ -450,5 +450,9 @@ $(document).ready(function () {
     });
     $('.loyalty-tooltip').click(function(e) {
         $(this).fadeOut();
+    });
+
+    $('.notification-close').click(function(e) {
+        $('.notification').fadeOut();
     });
 });
