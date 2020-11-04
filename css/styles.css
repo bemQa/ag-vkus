@@ -2122,6 +2122,10 @@ span.error {
     margin-right: 50px;
 }
 
+.mt90 {
+    margin-top: 100px;
+}
+
 .mt100 {
     margin-top: 100px;
 }
@@ -5851,6 +5855,129 @@ input.error + .vote-checkmark {
     display: none;
 }
 
+.dzen-product-block {
+    margin-bottom: 100px;
+}
+
+.dzen-title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dark-pict {
+    position: relative;
+    max-width: 122px;
+    width: 100%;
+    margin: 20px auto 50px;
+}
+
+.dark-pict::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 103px;
+    height: 97px;
+    margin: auto;
+    background: #E0C892;
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+.dark-pict img {
+    position: relative;
+}
+
+.dzen-products {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1210px;
+    width: 100%;
+    margin: auto;
+}
+
+.dzen-product {
+    position: relative;
+}
+
+.dzen-product-img {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 133px;
+    height: 310px;
+    margin: 0 auto 10px;
+}
+
+.dzen-product-img img {
+    position: relative;
+}
+
+.dzen-product .dzen-product-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 103px;
+    height: 194px;
+    margin: auto;
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.dzen-product1 .dzen-product-img::before {
+    background: #3E9546;
+}
+
+.dzen-product2 .dzen-product-img::before {
+    background: #C01C29;
+}
+
+.dzen-product3 .dzen-product-img::before {
+    background: #E0C892;
+}
+
+.dzen-product4 .dzen-product-img::before {
+    background: #B98974;
+}
+
+.dzen-product5 .dzen-product-img::before {
+    background: #CD1A45;
+}
+
+.dzen-product6 .dzen-product-img::before {
+    background: #FF9700;
+}
+
+.dzen-product-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.dzen-product-text {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.new-labe {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 1;
+}
+
 @media (max-width: 1280px) {
     .container {
     	max-width: 1000px;
@@ -7941,8 +8068,26 @@ input.error + .vote-checkmark {
         line-height: 12px;
     }
 
+    .dzen-product-block {
+        margin-bottom: 30px;
+    }
+
+    .dark-pict {
+        margin-bottom: 20px;
+    }
+
     .dzen-steps {
         margin-top: 30px;
+    }
+
+    .dzen-products {
+        flex-direction: column;
+    }
+
+    .dzen-product {
+        max-width: 170px;
+        width: 100%;
+        margin: 20px auto;
     }
 }
 
