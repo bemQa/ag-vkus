@@ -322,6 +322,11 @@ body .dark .scroll-element .scroll-element_track {
     background: #FFF9BD;
 }
 
+body .dzen-winners-block .scroll-element .scroll-element_track,
+body .dzen-faq-block .scroll-element .scroll-element_track {
+    background: #fff;
+}
+
 body .scroll-element .scroll-bar {
     height: auto;
     min-height: 10px;
@@ -339,6 +344,11 @@ body .lk-block .scroll-element .scroll-bar {
 
 body .dark .scroll-element .scroll-bar {
     background: #FFF9BD;
+}
+
+body .dzen-winners-block .scroll-element .scroll-bar,
+body .dzen-faq-block .scroll-element .scroll-bar {
+    background: #fff;
 }
 
 body .scroll-element:hover .scroll-bar {
@@ -5978,6 +5988,178 @@ input.error + .vote-checkmark {
     z-index: 1;
 }
 
+.dzen-prizes-block {
+    margin-bottom: 60px;
+}
+
+.dzen-prizes {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin: 30px auto 0;
+}
+
+.dzen-prize-img {
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    min-height: 486px;
+    margin-bottom: 10px;
+}
+
+.dzen-prize1 .dzen-prize-img {
+    max-width: 586px;
+    width: 100%;
+}
+
+.dzen-prize2 .dzen-prize-img {
+    max-width: 405px;
+    width: 100%;
+}
+
+.dzen-prize-text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.dzen-prize-text span {
+    color: #F6D344;
+}
+
+.dzen-winners-block {
+    margin-bottom: 100px;
+}
+
+.dzen-winners-block .date-filter::before {
+    content: 'Неделя розыгрыша';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    height: 16px;
+    margin: auto;
+    background: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.dzen-winners-block .date-filter {
+    max-width: 230px;
+    padding-left: 120px;
+}
+
+.dzen-winners-block .date-filter .select {
+    min-width: 110px;
+}
+
+.dzen-winners-block .select2-container .select2-selection--single {
+    width: 100%;
+    height: 30px;
+    padding: 7px 20px 7px 10px;
+    border: 1px solid #85312C;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.dzen-winners-block .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 0;
+    right: 10px;
+    width: 9px;
+    height: 6px;
+}
+
+.dzen-winners-block .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    width: 9px;
+    height: 6px;
+    background: url(../img/dzen/arrow-date.svg) center no-repeat;
+}
+
+.dzen-winners-block .select2-container--default .select2-selection--single .select2-selection__placeholder,
+.dzen-winners-block .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 14px;
+}
+
+.dzen-winners-block .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-weight: normal;
+    color: #85312C;
+    padding-right: 0;
+}
+
+.dzen-winners-block .select2-container--open .select2-dropdown--below {
+    border: 1px solid #85312C;
+}
+
+.dzen-winners-block .select2-results__option {
+    font-size: 14px;
+    padding: 7px 20px 7px 10px;
+}
+
+.dzen-winners-block .select2-container--default .select2-results__option[aria-selected=true], .select2-container--default .select2-results__option--highlighted[aria-selected],
+.dzen-winners-block .select2-dropdown {
+    color: #85312C;
+}
+
+.dzen-winners-block .phone-filter {
+    max-width: 280px;
+}
+
+.dzen-winners-block .filters .phone-filter input:not([type="checkbox"]) {
+    width: 100%;
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-family: 'OfficinaSans';
+    font-size: 14px;
+    line-height: 1;
+    color: #85312C;
+    background: #fff;
+    border: 1px solid #85312C;
+    border-radius: 25px;
+    transition: all .2s linear;
+    box-shadow: none;
+    transform: none;
+}
+
+.dzen-winners-block .search {
+    right: 10px;
+    background: url(../img/dzen/search.svg) center no-repeat;
+    background-size: contain;
+}
+
+.dzen-winners-block table th {
+    font-size: 12px;
+    line-height: 14px;
+    color: #F6D344;
+}
+
+.dzen-winners-block table td {
+    font-size: 16px;
+    color: #fff;
+}
+
+.dzen-winners-block table td:first-child {
+    font-weight: bold;
+    min-width: 150px;
+}
+
+.dzen-winners-block .win-img {
+    background: none;
+    border-radius: 0;
+}
+
+.dzen-winners-block .win-img img {
+    width: auto;
+}
+
+.dzen-winners-block .win-info span {
+    max-width: 205px;
+}
+
 @media (max-width: 1280px) {
     .container {
     	max-width: 1000px;
@@ -8089,6 +8271,18 @@ input.error + .vote-checkmark {
         width: 100%;
         margin: 20px auto;
     }
+
+    .dzen-prizes {
+        flex-direction: column;
+    }
+
+    .dzen-prize-img {
+        min-height: auto;
+    }
+
+    .dzen-winners-block .date-filter {
+        margin: auto;
+    }
 }
 
 @media (max-width: 540px) {
@@ -8221,5 +8415,9 @@ input.error + .vote-checkmark {
         font-size: 13px;
         margin: 0 2px;
         padding: 10px 5px;
+    }
+
+    .dzen-prize-text {
+        font-size: 17px;
     }
 }
