@@ -81,6 +81,7 @@ $(document).ready(function () {
     }
     $('.choc-history').scrollbar();
     $('.factory-winners-right, .loyalty-winners-list').scrollbar();
+    $('.dzen-lk-prizes').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({
