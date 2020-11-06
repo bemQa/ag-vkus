@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'OfficinaSans';
+    src: url('https://alpengold.me/fonts/OfficinaSansBookC.eot');
+    src: url('https://alpengold.me/fonts/OfficinaSansBookC.eot?#iefix') format('embedded-opentype'),
+        url('https://alpengold.me/fonts/OfficinaSansBookC.woff2') format('woff2'),
+        url('https://alpengold.me/fonts/OfficinaSansBookC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OfficinaSans';
+    src: url('https://alpengold.me/fonts/OfficinaSansBoldC.eot');
+    src: url('https://alpengold.me/fonts/OfficinaSansBoldC.eot?#iefix') format('embedded-opentype'),
+        url('https://alpengold.me/fonts/OfficinaSansBoldC.woff2') format('woff2'),
+        url('https://alpengold.me/fonts/OfficinaSansBoldC.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+body {
+    font-family: 'OfficinaSans';
+    font-weight: normal;
+    font-style: normal;
+    background-color: transparent;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    height: 100%;
+    color: #85312C;
+}
+
+.container.uf-container.container--custom {
+    color: #85312C;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    padding: 0;
+}
+
+.container.uf-container.container--custom::-webkit-scrollbar {
+    width: 0;
+}
+
+.container-tutorial__text {
+    font-family: 'OfficinaSans';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.container-tutorial__text p {
+    margin-bottom: 20px;
+}
+
+.dropzone.dropzone--custom.dz-clickable {
+    background-color: transparent;
+    border: 2px solid rgba(39, 98, 158, .3);
+    text-align: center;
+    border-radius: 0;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    margin: 16px auto;
+    border-radius: 0;
+    overflow: hidden;
+    border: 3px solid #1D3A8E;
+}
+
+@media screen and (max-width:768px) {
+    .dropzone .dz-preview.dz-image-preview {
+        width: 200px;
+    }
+}
+
+.dropzone .dz-preview .dz-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+}
+
+.dropzone .dz-preview .dz-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0 !important;
+    font-weight: bold;
+    background-color: #fff;
+    border-color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 0;
+    z-index: 21;
+    color: #27629E;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.dropzone .dz-preview .dz-remove::before {
+    content: 'X';
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+    background: #FEF09C;
+    text-decoration: none;
+}
+
+.uf-button-wrapper.button-wrapper--custom {
+    text-align: center
+}
+
+.uf-button-submit.button-submit--custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    margin: auto;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #EE2E30;
+    transition: all .2s linear;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.uf-button-submit.button-submit--custom:hover,
+.uf-button-submit.button-submit--custom:focus {
+    background: #D72627;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom {
+    margin: 20px 0;
+}
+
+.dropzone.dz-started .dz-message span,
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    margin: auto;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #F6D344;
+    transition: all .2s linear;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.dropzone.dz-started .dz-message span:hover,
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button:hover {
+    background: #F7C600;
+}
+
+.uf-controls-wrapper {
+    margin-top: 20px;
+}
+
+.uf-controls-wrapper .form-control {
+    max-width: 260px;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px !important;
+    font-family: 'OfficinaSans';
+    font-size: 14px;
+    line-height: 1;
+    color: #85312C;
+    background: #fff;
+    border: 1px solid #85312C;
+    border-radius: 25px;
+    transition: all .2s linear;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.uf-controls-wrapper .form-control:focus {
+    box-shadow: none;
+}
+
+.input-group.date {
+    /*overflow: hidden;*/
+    margin: 10px auto;
+    width: 100%;
+    min-width: 220px;
+    max-width: 260px;
+}
+
+.input-group.date input {
+    margin: 0;
+    min-width: 220px;
+}
+
+.input-group.date .input-group-addon {
+    border-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #85312C;
+    border-left: none;
+}
+
+.bootstrap-datetimepicker-widget {
+    z-index: 9999;
+    background: #fefefe;
+    color: #000;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    width: 17em;
+}
