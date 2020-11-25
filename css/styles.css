@@ -8580,7 +8580,8 @@ input.error + .vote-checkmark {
 
     .dzen-kv-wrapper::before {
         top: -25px;
-        left: 0;
+        left: -25px;
+        right: -25px;
         width: 325px;
         height: 389px;
     }
