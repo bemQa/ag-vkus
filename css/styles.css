@@ -6519,6 +6519,35 @@ input.error + .vote-checkmark {
     margin-top: 40px;
 }
 
+.top3-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.top3-item {
+    margin: 30px auto;
+}
+
+.top3-item-title {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #009ED7;
+}
+
+.top3-item-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
 @media (max-width: 1280px) {
     .container {
     	max-width: 1000px;
